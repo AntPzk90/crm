@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>crm</title>
   <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./jquery-ui/jquery-ui.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="simple-effects-for-drop-down-lists/js/modernizr.custom.63321.js"></script>
 </head>
 
 <body>
@@ -104,8 +105,13 @@
                 <fieldset class="projects__form-fieldset-type form__fieldset">
                   <legend class="projects__form-legend form__legend vis-hidd">типы проектов</legend>
 
-                  <select class="projects__form-select-type form__select">
-                    <option value="all">Все типы проектов</option>
+                  <select class="projects__form-select-type form__select" id="cd-dropdown-1">
+                    <option value="-1">Все типы проектов</option>
+                    <option value="type-1">Задание на дом glkjhgkfjg kfjghkfjghkfjh kfjghkfjghf kjhgfkjgh </option>
+                    <option value="type-2">Спорт режим</option>
+                    <option value="type-2">Спорт режим</option>
+                    <option value="type-2">Спорт режим</option>
+                    <option value="type-2">Спорт режим</option>
                   </select>
 
                   <div class="projects__form-area-projects">
@@ -224,48 +230,64 @@
 
                   <div class="projects__form-wrapper projects__form-wrapper--responsible-status">
 
-                    <select class="projects__form-select-responsible form__select">
-                      <option value="start">Ответственный</option>
+                    <select class="projects__form-select-responsible form__select" id="cd-dropdown-2">
+                      <option value="-1">Ответственный</option>
+                      <option value="boss-1">Вася</option>
+                      <option value="boss-2">Галя</option>
                     </select>
 
-                    <select class="projects__form-select-status form__select">
-                      <option value="start">Статус</option>
+                    <select class="projects__form-select-status form__select" id="cd-dropdow-status">
+                      <option value="-1">Статус</option>
+                      <option value="status-1" class="form__option form__option--not-active">Ещё не активна / 1</option>
+                      <option value="status-2" class="form__option form__option--waiting-activation">Ждёт активации / 2</option>
+                      <option value="status-3" class="form__option form__option--waiting-completion">Ждёт выполнения / 12</option>
+                      <option value="status-4" class="form__option form__option--failed">Проавлено / 11</option>
+                      <option value="status-5" class="form__option form__option--waiting-verification">Ждёт проверки /</option>
+                      <option value="status-6" class="form__option form__option--waiting-decision">Ждёт решения /</option>
+                      <option value="status-7" class="form__option form__option--made-tested">Сделана и проверена /</option>
+                      <option value="status-8" class="form__option form__option--not-made-tested">Не сделана и не проверена /</option>
+                      <option value="status-9" class="form__option form__option--urgent">Срочно сделать /</option>
+                      <option value="status-10" class="form__option form__option--made-first">Делать первым /</option>
                     </select>
 
                   </div>
 
                   <div class="projects__form-wrapper projects__form-wrapper--client-date">
-                    <select class="projects__form-select-client form__select">
-                      <option value="start">Клиент</option>
+                    <select class="projects__form-select-client form__select" id="cd-dropdown-4">
+                      <option value="-1">Клиент</option>
+                      <option value="client-1">Виктор Викторович Рубенштейн / ООО РусБлатЧёто-там</option>
+                      <option value="client-2">Эдуард Сергеевич Суровый / ООО РусМузБредЧёто-там</option>
+                      <option value="client-2">Эдуард Сергеевич Суровый / ООО РусМузБредЧёто-там</option>
                     </select>
 
                     <div class="projects__form-wrapper-inner">
-                      <input type="date">
-                      <input type="date">
+                      <input type="text" class="projects__form-date-input form__text-input projects__form-date-input--start" id="datepicker" placeholder="Любая дата">
+                      <span> - </span>
+                      <input type="text" class="projects__form-date-input form__text-input projects__form-date-input--final" id="datepicker-final" placeholder="Любая дата">
                     </div>
                   </div>
 
                   <div class="projects__form-wrapper projects__form-wrapper--checkboxes">
                     <div class="projects__checkboxes-wrapper">
-                      <input type="checkbox" id="tested" class="projects__checkbox form__checkbox">
+                      <input type="checkbox" id="tested" class="projects__checkbox form__checkbox" value="proven">
                       <label for="tested" class="projects__checkbox-label form__checkbox-label">Показывать
                         проверенные</label>
                     </div>
 
                     <div class="projects__checkbox-wrapper">
-                      <input type="checkbox" id="date-add" class="projects__checkbox form__checkbox">
+                      <input type="checkbox" id="date-add" class="projects__checkbox form__checkbox" value="date-add">
                       <label for="date-add" class="projects__checkbox-label form__checkbox-label">По дате
                         создания</label>
                     </div>
 
                     <div class="projects__checkbox-wrapper">
-                      <input type="checkbox" id="date-control" class="projects__checkbox form__checkbox">
+                      <input type="checkbox" id="date-control" class="projects__checkbox form__checkbox" value="date-final">
                       <label for="date-control" class="projects__checkbox-label form__checkbox-label">По контрольной
                         дате</label>
                     </div>
 
                     <div class="projects__checkbox-wrapper">
-                      <input type="checkbox" id="today" class="projects__checkbox form__checkbox">
+                      <input type="checkbox" id="today" class="projects__checkbox form__checkbox" value="today">
                       <label for="today" class="projects__checkbox-label form__checkbox-label">Сегодня</label>
                     </div>
                   </div>
@@ -334,7 +356,7 @@
                 Экспорт в xls
               </a>
 
-              <a href="#" class="controls__fields-setting controls__btn controls__btn--disabled">
+              <a href="#" class="controls__fields-setting controls__btn">
                 Настройка полей
               </a>
             </div>
@@ -1012,7 +1034,194 @@
     </p>
     <button type="button" class="popup__btn-close"></button>
     <form class="add-new-project__form form" action="url" method="POST">
+      <div class="add-new-project__form-area-projects">
+        <p class="add-new-project__inner-title">Типы проектов</p>
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
 
+        <button type="button" class="projects__form-area-btn projects__form-area-btn--active">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+
+        <button type="button" class="projects__form-area-btn">
+          ЗД
+          <span class="projects__btn-counter">
+            10
+          </span>
+        </button>
+      </div>
+      <input type="text" class="add-new-project__form-text form__text-input" placeholder="Название проекта">
+      <textarea class="add-new-project__form-textarea form__textarea" placeholder="Суть проекта"></textarea>
+      <select class="add-new-project__form-select form__select">
+        <option value="-1">Клиент</option>
+      </select>
+      <button type="submit" class="add-new-project__btn-submit">Добавить проект</button>
+    </form>
+  </div>
+
+  <div class="popup new-client">
+    <p class="popup__title">
+      Новый клиент
+    </p>
+    <button type="button" class="popup__btn-close"></button>
+    <form class="new-client__form form" action="url" method="POST">
+      <input type="text" class="new-client__form-name form__text-input" placeholder="Имя">
+      <input type="tel" class="new-client__form-tel form__text-input" placeholder="Teлефон">
+      <input type="email" class="new-client__form-email form__text-input" placeholder="email">
+      <textarea class="new-client__form-textarea form__textarea" placeholder="Комментарий"></textarea>
+      <button type="submit" class="new-client__btn-submit">Добавить</button>
+    </form>
+  </div>
+
+  <div class="popup field-settings">
+    <p class="popup__title">
+      Новый клиент
+    </p>
+    <button type="button" class="popup__btn-close"></button>
+    <form class="field-settings__form form" action="url" method="POST">
+      <fieldset class="field-settings__start-info-fieldset form__fieldset">
+        <legend>
+          Первичная информация
+        </legend>
+        <ul class="field-settings__checkbox-list">
+          <li class="field-settings__checkbox-list-item">
+            <input type="checkbox" class="field-settings__checkbox" id="essence" value="essence">
+            <label class="field-settings__checkbox-label" for="essence">Суть проекта</label>
+          </li>
+          <li class="field-settings__checkbox-list-item">
+            <input type="checkbox" class="field-settings__checkbox" id="client" value="client">
+            <label class="field-settings__checkbox-label" for="client">Клиент</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="field-settings__main-info-fieldset form__fieldset">
+        <legend>
+          Основная информация
+        </legend>
+        <ul class="field-settings__checkbox-list">
+          <li class="field-settings__checkbox-list-item">
+            <input type="checkbox" class="field-settings__checkbox" id="cell-name" value="cell-name">
+            <label class="field-settings__checkbox-label" for="cell-name">Название ячейки</label>
+          </li>
+          <li class="field-settings__checkbox-list-item">
+            <input type="checkbox" class="field-settings__checkbox" id="cell-name-1" value="cell-name-1">
+            <label class="field-settings__checkbox-label" for="cell-name-1">Название ячейки</label>
+          </li>
+          <li class="field-settings__checkbox-list-item">
+            <input type="checkbox" class="field-settings__checkbox" id="cell-name-2" value="cell-name-2">
+            <label class="field-settings__checkbox-label" for="cell-name-2">Название ячейки</label>
+          </li>
+          <li class="field-settings__checkbox-list-item">
+            <input type="checkbox" class="field-settings__checkbox" id="cell-name-3" value="cell-name-3">
+            <label class="field-settings__checkbox-label" for="cell-name-3">Название ячейки</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="field-settings__additional-info-fieldset form__fieldset">
+        <legend>
+          Дополнительная информация
+        </legend>
+        <ul class="field-settings__checkbox-list">
+          <li class="field-settings__checkbox-list-item">
+            <input type="checkbox" class="field-settings__checkbox" id="cell-name-4" value="cell-name-4">
+            <label class="field-settings__checkbox-label" for="cell-name-4">Название ячейки</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" class="field-settings__btn-submit">Добавить</button>
     </form>
   </div>
   <script src="./js/script.js"></script>
