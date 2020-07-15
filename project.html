@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>crm</title>
+  <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="simple-effects-for-drop-down-lists/js/modernizr.custom.63321.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+
+      <div class="header__wrapper">
+
+        <a href="#" class="header__logo-link">
+          <img class="header__logo-img" src="./img/header-logo.png" height="40" width="99" alt="header-logo">
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item header__nav-list-item--active">
+              <a href="#" class="header__nav-list-link">
+                Проекты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">
+                Задачи
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">
+                Клиенты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">
+                Сотрудники
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">
+                Финансы
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">
+                Логи
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__settings">
+          <li class="header__settings-item header__settings-item--support">
+            <a href="#" class="header__settings-link header__settings-link--support">
+              <img class="header__settings-link-icon" src="./img/icons/support-icon.png" height="26" width="21" alt="support-icon">
+            </a>
+          </li>
+          <li class="header__settings-item header__settings-item--hint">
+            <a href="#" class="header__settings-link header__settings-link--hint">
+              <img class="header__settings-link" src="./img/icons/bulb-icon.png" height="25" width="23" alt="support-icon">
+            </a>
+          </li>
+        </ul>
+
+        <div class="header__date-time">
+          <div class="header__time">
+            14:10
+          </div>
+          <div class="header__date">
+            04.02.20
+          </div>
+        </div>
+
+        <div class="header__user-block">
+          <a href="#" class="header__user-link">
+            <img class="header__user-img" src="./img/user-img.png" height="35" width="35" alt="header-user">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="project-settings">
+      <div class="project-settings__wrapper">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item">
+                <a href="#" class="breadcrums__list-link">
+                  Проекты
+                </a>
+              </li>
+              <li class="breadcrumbs__list-item">
+                <a href="#" class="breadcrums__list-link">
+                  <span class="breadcrumbs-litera">
+                    РД-2
+                  </span>
+                  <span class="breadcrumbs-full-text">
+                    (Рабочие дела)
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h1 class="project-settings__title big-title">
+            Переезд в новый офис
+          </h1>
+          <div class="project-settings__wrapper-inner project-pages">
+            <div class="project-pages__wrapper-top">
+              <nav class="project-pages__switch project-pages__switch--project-workspace">
+                <button class="project-pages__btn project-pages__btn--data">
+                  Вводные данные
+                </button>
+                <button class="project-pages__btn project-pages__btn--tasks project-pages__btn--active">
+                  Задачи
+                </button>
+                <button class="project-pages__btn project-pages__btn--notes">
+                  Заметки
+                </button>
+                <button class="project-pages__btn project-pages__btn--finance">
+                  Финансы
+                </button>
+              </nav>
+
+            </div>
+            <div class="project-pages__wrapper-middle">
+              <div class="project-pages__item project-pages__item--data">
+                <form class="project-pages__item-form form form-project-data" action="https//delaidelo.ru" method="POST">
+                  <div class="project-pages__edit-wrapper">
+                    <button type="button" class="project-pages__edit-btn project-pages__edit-btn--edit">Редактировать</button>
+                    <button type="button" class="project-pages__edit-btn project-pages__edit-btn--cancellation">Отмена</button>
+                    <button type="submit" class="project-pages__edit-btn project-pages__edit-btn--save">Сохранить</button>
+                  </div>
+                  <fieldset class="form-project-data__fieldset form-project-data__fieldset--essense form__fieldset">
+                    <legend class="vis-hidd">
+                      Описание
+                    </legend>
+                    <div class="form-project-data__fieldset-wrapper-essense">
+                      <div class="form-project-data__fieldset-wrapper">
+                        <label for="essense-message" class="form-project-data__label form__label">Суть проекта</label>
+                        <textarea name="essense-project" id="essense-message" class="form-project-data__textarea form__textarea" placeholder="Суть проекта"></textarea>
+                      </div>
+                      <div class="form-project-data__fieldset-wrapper">
+                        <label class="form-project-data__label form__label">Клиент</label>
+                        <select class="form-project-data__select form__select">
+                          <option value="-1" class="form__option-start">Тип ячейки</option>
+                          <option value="работа" class="form__option">Работа</option>
+                          <option value="работа" class="form__option">Работа</option>
+                          <option value="работа" class="form__option">Работа</option>
+                          <option value="работа" class="form__option">Работа</option>
+                        </select>
+                      </div>
+                      <button type="button" class="form-project-data_new-client-btn">
+                        Новый клиент
+                      </button>
+                    </div>
+                  </fieldset>
+                  <div class="form-project-data__wrapper-inner">
+                    <fieldset class="form-project-data__fieldset form__fieldset">
+                      <legend>
+                        Основная Информация
+                      </legend>
+                      <label for="main-input-1" class="form-project-data__label form__label">Инн</label>
+                      <input name="#" id="main-input-1" type="text" class="form-project-data__input-text form__text-input" placeholder="Введите значение">
+                      <label for="main-input-2" class="form-project-data__label form__label">РПГ</label>
+                      <input name="#" id="main-input-2" type="text" class="form-project-data__input-text form__text-input" placeholder="Введите значение">
+                      <label for="main-input-3" class="form-project-data__label form__label">ГДР</label>
+                      <input name="#" id="main-input-3" type="text" class="form-project-data__input-text form__text-input" placeholder="Введите значение">
+                    </fieldset>
+                    <fieldset class="form-project-data__fieldset form__fieldset">
+                      <legend>
+                        Дополнительная Информация
+                      </legend>
+                      <label for="main-input-4" class="form-project-data__label form__label">Инн</label>
+                      <input name="#" id="main-input-4" type="text" class="form-project-data__input-text form__text-input" placeholder="Введите значение">
+                      <label for="main-input-5" class="form-project-data__label form__label">РПГ</label>
+                      <input name="#" id="main-input-5" type="text" class="form-project-data__input-text form__text-input" placeholder="Введите значение">
+                      <label for="main-input-6" class="form-project-data__label form__label">ГДР</label>
+                      <input name="#" id="main-input-6" type="text" class="form-project-data__input-text form__text-input" placeholder="Введите значение">
+                    </fieldset>
+                  </div>
+                </form>
+              </div>
+
+              <div class="project-pages__item project-pages__item--tasks project-pages__item--active">
+                <form class="project-pages__item-form form form-project-tasks">
+                  <div class="project-pages__edit-wrapper">
+                    <button type="button" class="project-pages__edit-btn project-pages__edit-btn--edit">Редактировать</button>
+                    <button type="button" class="project-pages__edit-btn project-pages__edit-btn--cancellation">Отмена</button>
+                    <button type="submit" class="project-pages__edit-btn project-pages__edit-btn--save">Сохранить</button>
+                  </div>
+                  <fieldset class="form-project-data__fieldset form-project-data__fieldset--essense form__fieldset">
+                    <legend class="vis-hidd">
+                      Описание
+                    </legend>
+                    <div class="form-project-data__fieldset-wrapper-essense">
+                      <div class="form-project-data__fieldset-wrapper">
+                        <label for="essense-message" class="form-project-data__label form__label">Суть проекта</label>
+                        <textarea name="essense-project" id="essense-message" class="form-project-data__textarea form__textarea" placeholder="Суть проекта"></textarea>
+                      </div>
+                      <div class="form-project-data__fieldset-wrapper">
+                        <label class="form-project-data__label form__label">Клиент</label>
+                        <select class="form-project-data__select form__select">
+                          <option value="-1" class="form__option-start">Тип ячейки</option>
+                          <option value="работа" class="form__option">Работа</option>
+                          <option value="работа" class="form__option">Работа</option>
+                          <option value="работа" class="form__option">Работа</option>
+                          <option value="работа" class="form__option">Работа</option>
+                        </select>
+                      </div>
+                      <button type="button" class="form-project-data_new-client-btn">
+                        Новый клиент
+                      </button>
+                    </div>
+                  </fieldset>
+                  <div class="form-project-tasks__wrapper-inner">
+                    <div class="form-project-tasks__navigation controls">
+                      <div class="form-project-tasks__navigation-wrapper">
+                        <a href="#" class="controls__add-btn controls__btn controls__btn--active controls__btn--form-task">
+                          Добавить задачу
+                        </a>
+                        <a href="#" class="controls__arrow contols__arrow--up">
+                          <span class="vis-hidd">кнопка сотрировать ввниз</span>
+                        </a>
+                        <a href="#" class="controls__arrow contols__arrow--down">
+                          <span class="vis-hidd">кнопка сотрировать вверх</span>
+                        </a>
+                        <a href="#" class="controls__arrow contols__arrow--close">
+                          <span class="vis-hidd">кнопка Закрыть</span>
+                        </a>
+                      </div>
+                      <div class="form-project-tasks__navigation-wrapper">
+                        <div class="form-project-data__fieldset-wrapper">
+                          <label class="form-project-data__label form__label">Группа из шаблона</label>
+                          <select class="form-project-tasks__select form__select">
+                            <option value="-1" class="form__option-start">выбрать</option>
+                            <option value="работа" class="form__option">Работа</option>
+                            <option value="работа" class="form__option">Работа</option>
+                            <option value="работа" class="form__option">Работа</option>
+                            <option value="работа" class="form__option">Работа</option>
+                          </select>
+                        </div>
+                        <a href="#" class="controls__arrow contols__arrow--plus">
+                          <span class="vis-hidd">кнопка Добавить</span>
+                        </a>
+                        <a href="#" class="controls__arrow contols__arrow--close">
+                          <span class="vis-hidd">кнопка Закрыть</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="form-project-tasks__content">
+                      <div class="form-project-tasks__task-item">
+                        <div class="form-project-tasks__title-row">
+                          <div class="form-project-tasks__title-wrapper">
+                            <span class="form-project-tasks__title-group">
+                              Группа
+                            </span>
+                            <span class="form-project-tasks__title-name">
+                              Завершение
+                            </span>
+                          </div>
+                          <div class="form-project-tasks__title-wrapper">
+                            <button type="button" class="form-project-tasks__title-button">
+                              Переименовать
+                            </button>
+                            <button type="button" class="form-project-tasks__title-button">
+                              Добавить в шаблоны
+                            </button>
+                          </div>
+                          <button type="button" class="form-project-tasks__title-dropdown-btn">
+                            <span class="vis-hidd">кнопка открыть список</span>
+                          </button>
+                        </div>
+                        <div class="form-project-tasks__tab">
+                          <div class="form-project-tasks__status-row">
+                            <div class="form-project-tasks__status-wraper">
+                              <span class="form-project-tasks__status-name">Проверенные</span>
+                              <span class="form-project-tasks__status-count">2</span>
+                            </div>
+                            <button type="button" class="form-project-tasks__status-add-btn"></button>
+                          </div>
+                          <div class="form-project-tasks__item-inner form-project-tasks__item-inner--failed">
+                            <div class="form-project-tasks__item-dscr-main">
+                              <button type="button" class="form-project-tasks__close-item-btn"></button>
+                              <span>Задача</span>
+                              <p class="form-project-tasks__item-dscr-txt">
+                                Купить сосиски и кетчуп. Название задачи может быть довольно длинным и даже не уместиться в одну строку.
+                              </p>
+                              <div class="form-project-tasks__status-switch">
+                                <button data-status="failed" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--failed"></button>
+                                <button data-status="waiting-completion" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--waiting-completion"></button>
+                                <button data-status="not-active" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--not-active"></button>
+                              </div>
+                            </div>
+                            <div class="form-project-tasks__item-info">
+                              <ul class="form-project-tasks__item-respons-list">
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Ответсвенный
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    Артур Мирзоян
+                                  </p>
+                                </li>
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Контрольная дата
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    17.02.2020
+                                  </p>
+                                </li>
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Статус
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    Ждёт выполнения
+                                  </p>
+                                </li>
+                              </ul>
+                              <ul class="form-project-tasks__item-explanation-list">
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Что сделать
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...</textarea>
+                                </li>
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Комментарий
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Жeлательно куриные и побольше</textarea>
+                                </li>
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Результат
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Всё сыты все довольны</textarea>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="form-project-tasks__edit-wrapper">
+                              <div class="form-project-tasks__edit-title-row">
+                                <span>Доступные действия</span>
+                              </div>
+                              <div class="form-project-tasks__edit-content">
+                                <div class="form-project-tasks__edit-wrapper-inner">
+                                  <label class="form-project-tasks__edit-label">
+                                    <input type="checkbox" name="reminder" class="form-project-tasks__edit-checkbox">
+                                    Hапоминание
+                                  </label>
+                                  <a href="#" class="controls__edit-btn edit-btn">
+                                    <span class="vis-hidd">кнопка редактировать</span>
+                                  </a>
+                                  <a href="#" class="controls__close-btn close-btn close-btn--red">
+                                    <span class="vis-hidd">кнопка закрыть</span>
+                                  </a>
+                                  <a href="#" class="controls__list-btn">
+                                    <span class="vis-hidd">кнопка списка</span>
+                                  </a>
+                                </div>
+                                <div class="form-project-tasks__edit-wrapper-inner">
+                                  <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--completed">Сделано</button>
+                                  <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--failed">Не сделано</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-project-tasks__item-inner form-project-tasks__item-inner--failed">
+                            <div class="form-project-tasks__item-dscr-main">
+                              <button type="button" class="form-project-tasks__close-item-btn"></button>
+                              <span>Задача</span>
+                              <p class="form-project-tasks__item-dscr-txt">
+                                Купить сосиски и кетчуп. Название задачи может быть довольно длинным и даже не уместиться в одну строку.
+                              </p>
+                              <div class="form-project-tasks__status-switch">
+                                <button data-status="failed" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--failed"></button>
+                                <button data-status="waiting-completion" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--waiting-completion"></button>
+                                <button data-status="not-active" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--not-active"></button>
+                              </div>
+                            </div>
+                            <div class="form-project-tasks__item-info">
+                              <ul class="form-project-tasks__item-respons-list">
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Ответсвенный
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    Артур Мирзоян
+                                  </p>
+                                </li>
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Контрольная дата
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    17.02.2020
+                                  </p>
+                                </li>
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Статус
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    Ждёт выполнения
+                                  </p>
+                                </li>
+                              </ul>
+                              <ul class="form-project-tasks__item-explanation-list">
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Что сделать
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...</textarea>
+                                </li>
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Комментарий
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Жeлательно куриные и побольше</textarea>
+                                </li>
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Результат
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Всё сыты все довольны</textarea>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="form-project-tasks__edit-wrapper">
+                              <div class="form-project-tasks__edit-title-row">
+                                <span>Доступные действия</span>
+                              </div>
+                              <div class="form-project-tasks__edit-content">
+                                <div class="form-project-tasks__edit-wrapper-inner">
+                                  <label class="form-project-tasks__edit-label">
+                                    <input type="checkbox" name="reminder" class="form-project-tasks__edit-checkbox">
+                                    Hапоминание
+                                  </label>
+                                  <a href="#" class="controls__edit-btn edit-btn">
+                                    <span class="vis-hidd">кнопка редактировать</span>
+                                  </a>
+                                  <a href="#" class="controls__close-btn close-btn close-btn--red">
+                                    <span class="vis-hidd">кнопка закрыть</span>
+                                  </a>
+                                  <a href="#" class="controls__list-btn">
+                                    <span class="vis-hidd">кнопка списка</span>
+                                  </a>
+                                </div>
+                                <div class="form-project-tasks__edit-wrapper-inner">
+                                  <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--completed">Сделано</button>
+                                  <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--failed">Не сделано</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <template id="form-project-tasks__item-inner-template">
+                    <div class="form-project-tasks__item-inner">
+                      <div class="form-project-tasks__item-dscr-main">
+                        <button type="button" class="form-project-tasks__close-item-btn"></button>
+                        <span>Задача</span>
+                        <p class="form-project-tasks__item-dscr-txt">
+                          Новая задача
+                        </p>
+                        <div class="form-project-tasks__status-switch">
+                          <button data-status="failed" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--failed"></button>
+                          <button data-status="waiting-completion" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--waiting-completion"></button>
+                          <button data-status="not-active" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--not-active"></button>
+                        </div>
+                      </div>
+                      <div class="form-project-tasks__item-info">
+                        <ul class="form-project-tasks__item-respons-list">
+                          <li class="form-project-tasks__item-respons-item">
+                            <p class="form-project-tasks__item-respons-low-text">
+                              Ответсвенный
+                            </p>
+                            <p class="form-project-tasks__item-respons-upper-text">
+                              Артур Мирзоян
+                            </p>
+                          </li>
+                          <li class="form-project-tasks__item-respons-item">
+                            <p class="form-project-tasks__item-respons-low-text">
+                              Контрольная дата
+                            </p>
+                            <p class="form-project-tasks__item-respons-upper-text">
+                              17.02.2020
+                            </p>
+                          </li>
+                          <li class="form-project-tasks__item-respons-item">
+                            <p class="form-project-tasks__item-respons-low-text">
+                              Статус
+                            </p>
+                            <p class="form-project-tasks__item-respons-upper-text">
+                              Ждёт выполнения
+                            </p>
+                          </li>
+                        </ul>
+                        <ul class="form-project-tasks__item-explanation-list">
+                          <li class="form-project-tasks__item-explanation-item">
+                            <p class="form-project-tasks__item-explanation-title-row">
+                              Что сделать
+                            </p>
+                            <textarea class="form-project-tasks__item-explanation-dscr">Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...</textarea>
+                          </li>
+                          <li class="form-project-tasks__item-explanation-item">
+                            <p class="form-project-tasks__item-explanation-title-row">
+                              Комментарий
+                            </p>
+                            <textarea class="form-project-tasks__item-explanation-dscr">Жeлательно куриные и побольше</textarea>
+                          </li>
+                          <li class="form-project-tasks__item-explanation-item">
+                            <p class="form-project-tasks__item-explanation-title-row">
+                              Результат
+                            </p>
+                            <textarea class="form-project-tasks__item-explanation-dscr">Всё сыты все довольны</textarea>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="form-project-tasks__edit-wrapper">
+                        <div class="form-project-tasks__edit-title-row">
+                          <span>Доступные действия</span>
+                        </div>
+                        <div class="form-project-tasks__edit-content">
+                          <div class="form-project-tasks__edit-wrapper-inner">
+                            <label class="form-project-tasks__edit-label">
+                              <input type="checkbox" name="reminder" class="form-project-tasks__edit-checkbox">
+                              Hапоминание
+                            </label>
+                            <a href="#" class="controls__edit-btn edit-btn">
+                              <span class="vis-hidd">кнопка редактировать</span>
+                            </a>
+                            <a href="#" class="controls__close-btn close-btn close-btn--red">
+                              <span class="vis-hidd">кнопка закрыть</span>
+                            </a>
+                            <a href="#" class="controls__list-btn">
+                              <span class="vis-hidd">кнопка списка</span>
+                            </a>
+                          </div>
+                          <div class="form-project-tasks__edit-wrapper-inner">
+                            <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--completed">Сделано</button>
+                            <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--failed">Не сделано</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                  <template id="form-project-tasks__task-item-template">
+                    <div class="form-project-tasks__task-item">
+                      <div class="form-project-tasks__title-row">
+                        <div class="form-project-tasks__title-wrapper">
+                          <span class="form-project-tasks__title-group">
+                            Группа
+                          </span>
+                          <span class="form-project-tasks__title-name">
+                            Завершение
+                          </span>
+                        </div>
+                        <div class="form-project-tasks__title-wrapper">
+                          <button type="button" class="form-project-tasks__title-button" style="pointer-events: auto;">
+                            Переименовать
+                          </button>
+                          <button type="button" class="form-project-tasks__title-button" style="pointer-events: auto;">
+                            Добавить в шаблоны
+                          </button>
+                        </div>
+                        <button type="button" class="form-project-tasks__title-dropdown-btn" style="pointer-events: auto;">
+                          <span class="vis-hidd">кнопка открыть список</span>
+                        </button>
+                      </div>
+                      <div class="form-project-tasks__tab" style="">
+                        <div class="form-project-tasks__status-row">
+                          <div class="form-project-tasks__status-wraper">
+                            <span class="form-project-tasks__status-name">Проверенные</span>
+                            <span class="form-project-tasks__status-count">2</span>
+                          </div>
+                          <button type="button" class="form-project-tasks__status-add-btn" style="pointer-events: auto;"></button>
+                        </div>
+                          <div class="form-project-tasks__item-inner">
+                            <div class="form-project-tasks__item-dscr-main">
+                              <button type="button" class="form-project-tasks__close-item-btn"></button>
+                              <span>Задача</span>
+                              <p class="form-project-tasks__item-dscr-txt">
+                                Новая задача
+                              </p>
+                              <div class="form-project-tasks__status-switch">
+                                <button data-status="failed" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--failed"></button>
+                                <button data-status="waiting-completion" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--waiting-completion"></button>
+                                <button data-status="not-active" type="button" class="form-project-tasks__status-btn form-project-tasks__status-btn--not-active"></button>
+                              </div>
+                            </div>
+                            <div class="form-project-tasks__item-info">
+                              <ul class="form-project-tasks__item-respons-list">
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Ответсвенный
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    Артур Мирзоян
+                                  </p>
+                                </li>
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Контрольная дата
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    17.02.2020
+                                  </p>
+                                </li>
+                                <li class="form-project-tasks__item-respons-item">
+                                  <p class="form-project-tasks__item-respons-low-text">
+                                    Статус
+                                  </p>
+                                  <p class="form-project-tasks__item-respons-upper-text">
+                                    Ждёт выполнения
+                                  </p>
+                                </li>
+                              </ul>
+                              <ul class="form-project-tasks__item-explanation-list">
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Что сделать
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...Купить сосиски и кетчуп на всю группу. В режиме просмотра эти блоки свернуты до одной строки, при клике раскрываются...</textarea>
+                                </li>
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Комментарий
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Жeлательно куриные и побольше</textarea>
+                                </li>
+                                <li class="form-project-tasks__item-explanation-item">
+                                  <p class="form-project-tasks__item-explanation-title-row">
+                                    Результат
+                                  </p>
+                                  <textarea class="form-project-tasks__item-explanation-dscr">Всё сыты все довольны</textarea>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="form-project-tasks__edit-wrapper">
+                              <div class="form-project-tasks__edit-title-row">
+                                <span>Доступные действия</span>
+                              </div>
+                              <div class="form-project-tasks__edit-content">
+                                <div class="form-project-tasks__edit-wrapper-inner">
+                                  <label class="form-project-tasks__edit-label">
+                                    <input type="checkbox" name="reminder" class="form-project-tasks__edit-checkbox">
+                                    Hапоминание
+                                  </label>
+                                  <a href="#" class="controls__edit-btn edit-btn">
+                                    <span class="vis-hidd">кнопка редактировать</span>
+                                  </a>
+                                  <a href="#" class="controls__close-btn close-btn close-btn--red">
+                                    <span class="vis-hidd">кнопка закрыть</span>
+                                  </a>
+                                  <a href="#" class="controls__list-btn">
+                                    <span class="vis-hidd">кнопка списка</span>
+                                  </a>
+                                </div>
+                                <div class="form-project-tasks__edit-wrapper-inner">
+                                  <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--completed">Сделано</button>
+                                  <button type="button" class="form-project-tasks__edit-btn form-project-tasks__edit-btn--failed">Не сделано</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </template>
+                </form>
+              </div>
+
+              <div class="project-pages__item project-pages__item--notes">
+                <form class="project-pages__item-form form form-project-notes">
+                  <p style="font-size: 55px;">
+                    Заметки
+                  </p>
+                </form>
+              </div>
+
+              <div class="project-pages__item project-pages__item--finance">
+                <form class="project-pages__item-form form form-project-finance">
+                  <p style="font-size: 55px;">
+                    Финансы
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-settings__wrapper-inner project-pages project-pages--comments-files">
+            <nav class="project-pages__switch project-pages__switch--comments-files">
+              <button class="project-pages__btn project-pages__btn--active">
+                Все
+              </button>
+              <button class="project-pages__btn">
+                Комментарии
+              </button>
+              <button class="project-pages__btn">
+                Файлы
+              </button>
+            </nav>
+            <form class="project-pages__form form form-project-file-comment">
+              <fieldset class="form-project-file-comment__fieldset form__fieldset">
+                <legend class="vis-hidd">
+                  Комментарии и файлы
+                </legend>
+                <div class="form-project-file-comment__info-area">
+                  <ul class="form-project-file-comment__list">
+                    <li class="form-project-file-comment__list-item">
+                      <b class="form-project-file-comment__list-name">
+                        Антон Городецкий
+                      </b>
+                      <span class="form-project-file-comment__list-comment">
+                        Здравствуйте. Мне нужно консультация.
+                        Здравствуйте. Мне нужно консультация. Здравствуйте. Мне нужно консультация. Здравствуйте. Мне нужно консультация.
+                      </span>
+                      <span class="form-project-file-comment__list-date-time">
+                        <span class="date">08.02.2020</span>
+                        <span class="time">14:16</span>
+                      </span>
+                    </li>
+                    <li class="form-project-file-comment__list-item">
+                      <b class="form-project-file-comment__list-name">
+                        Антон Городецкий
+                      </b>
+                      <span class="form-project-file-comment__list-file">
+                        <span>text.txt</span>
+                      </span>
+                      <span class="form-project-file-comment__list-date-time">
+                        <span class="date">08.02.2020</span>
+                        <span class="time">14:16</span>
+                      </span>
+                    </li>
+                  </ul>
+                  <input name="file" type="file" multiple="multiple" class="form-project-file-comment__input-file">
+                </div>
+                <input name="#" type="text" class="form-project-file-comment__input-text form__text-input" placeholder="Напишите коментарий или перетащите файл">
+              </fieldset>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
+
+  <div class="popup new-client">
+    <p class="popup__title">
+      Новый клиент
+    </p>
+    <button type="button" class="popup__btn-close"></button>
+    <form class="new-client__form form" action="https//delaidelo.ru" method="POST">
+      <input name="#" type="text" class="new-client__form-name form__text-input" placeholder="Имя">
+      <input name="#" type="tel" class="new-client__form-tel form__text-input" placeholder="Teлефон">
+      <input name="#" type="email" class="new-client__form-email form__text-input" placeholder="email">
+      <textarea class="new-client__form-textarea form__textarea" placeholder="Комментарий"></textarea>
+      <button type="submit" class="new-client__btn-submit">Добавить</button>
+    </form>
+  </div>
+
+  <div class="popup">
+    <p class="popup__title">
+      Добавить новый ....
+    </p>
+    <button type="button" class="popup__btn-close"></button>
+    <form class="form" action="https//delaidelo.ru" method="POST">
+
+      <button type="submit" class="add-new-project__btn-submit">Сохранить новый тип</button>
+    </form>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
