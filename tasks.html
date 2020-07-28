@@ -34,12 +34,12 @@
               </a>
             </li>
             <li class="header__nav-list-item">
-              <a href="#" class="header__nav-list-link">
+              <a href="clients.html" class="header__nav-list-link">
                 Клиенты
               </a>
             </li>
             <li class="header__nav-list-item">
-              <a href="#" class="header__nav-list-link">
+              <a href="employees.html" class="header__nav-list-link">
                 Сотрудники
               </a>
             </li>
@@ -553,12 +553,12 @@
   </footer>
   <div class="popup edit-task-popup">
     <p class="popup__title">
-      Добавить новый тип
+      Редактировать Задачу
     </p>
     <button type="button" class="popup__btn-close"></button>
     <form class="edit-task-popup__form form" action="url" method="POST">
-      Редактировать Проект
-      <div class="edit-task-popup__form-wrapper">
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--group">
         <div class="edit-task-popup__form-wrapper-inner">
           <span>Группа</span>
           <select class="edit-task-popup__select form__select" id="edit-tast-select">
@@ -569,14 +569,15 @@
         </div>
         <button type="button" class="edit-task-popup__btn-add-group controls__btn">Добавить группу</button>
       </div>
-      <div class="edit-task-popup__form-wrapper">
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper-data--checkboxes">
 
         <div class="edit-task-popup__form-wrapper-inner">
           <span>Контрольная дата</span>
           <input name="#" type="text" class="projects__form-date-input form__text-input projects__form-date-input--start" id="datepicker" placeholder="Любая дата">
         </div>
 
-        <div class="edit-task-popup__form-wrapper-inner">
+        <div class="edit-task-popup__form-wrapper-inner edit-task-popup__form-wrapper-inner--responsible">
           <span>Ответсвенный</span>
           <select class="edit-task-popup__select form__select" id="edit-tast-select">
             <option value="-1">Имя</option>
@@ -586,11 +587,70 @@
         </div>
 
         <div class="edit-task-popup__form-wrapper-inner">
-
+          <div class="edit-task-popup__reminder">
+            <input type="checkbox" class="checkbox-reminder" id="checkbox-reminder-popup">
+            <label for="checkbox-reminder-popup">Напоминание</label>
+          </div>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="sms" value="sms" class="edit-task-popup__ckeckbox" id="sms-checkbox">
+            SMS
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="email" value="email" class="edit-task-popup__ckeckbox" id="email-checkbox">
+            Email
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="telegram" value="telegram" class="edit-task-popup__ckeckbox" id="telegram-checkbox">
+            Telegram
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="do-first" value="do-first" class="edit-task-popup__ckeckbox red-chekbox" id="do-first-checkbox">
+            Делать первым
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="urgently" value="urgently" class="edit-task-popup__ckeckbox yellow-chekbox" id="urgently-checkbox">
+            Срочно делать
+          </label>
         </div>
-
       </div>
-      <button type="submit" class="add-new-type__btn-submit">Сохранить новый тип</button>
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--task">
+        <span>Что сделать</span>
+        <textarea placeholder="some text...." class="edit-task-popup__textarea" name="task-txt"></textarea>
+        <button type="button" class="edit-task-popup__micro-btn">
+          <span class="vis-hidd">кнопка микрофона</span>
+        </button>
+      </div>
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--comment">
+        <span>Комментарий</span>
+        <textarea placeholder="some text...." class="edit-task-popup__textarea" name="comment"></textarea>
+        <button type="button" class="edit-task-popup__micro-btn">
+          <span class="vis-hidd">кнопка микрофона</span>
+        </button>
+      </div>
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--files">
+        <h3>Файлы и сканы докуметов</h3>
+        <div class="edit-task-popup__input-file-wrapper">
+          <input type="file" class="edit-task-popup__input-file" id="file">
+        </div>
+        <ul class="edit-task-popup__files-list">
+          <li class="edit-task-popup__files-list-item">
+            <img src="img/foto.png" width="40" height="40" class="edit-task-popup__file-img">
+            <span class="edit-task-popup__file-name">Название файла</span>
+            <button type="button" class="edit-task-popup__file-close close-btn close-btn--red"></button>
+          </li>
+
+          <li class="edit-task-popup__files-list-item">
+            <img src="img/foto.png" width="40" height="40" class="edit-task-popup__file-img">
+            <span class="edit-task-popup__file-name">Название файла</span>
+            <button type="button" class="edit-task-popup__file-close close-btn close-btn--red"></button>
+          </li>
+        </ul>
+      </div>
+
+      <button type="submit" class="add-new-type__btn-submit">Сохранить</button>
     </form>
   </div>
   <script src="./js/script.js"></script>
