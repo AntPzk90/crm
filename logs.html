@@ -43,12 +43,12 @@
                 Сотрудники
               </a>
             </li>
-            <li class="header__nav-list-item header__nav-list-item--active">
+            <li class="header__nav-list-item">
               <a href="finance.html" class="header__nav-list-link">
                 Финансы
               </a>
             </li>
-            <li class="header__nav-list-item">
+            <li class="header__nav-list-item header__nav-list-item--active">
               <a href="logs.html" class="header__nav-list-link">
                 Логи
               </a>
@@ -90,16 +90,16 @@
   </header>
 
   <main>
-    <section class="finance">
+    <section class="logs">
 
-      <div class="finance__wrapper">
-        <div class="finance__top">
+      <div class="logs__wrapper">
+        <div class="logs__top">
           <div class="container">
 
             <div class="projects__wrapper">
 
               <h1 class="projects__title big-title">
-                Мои Финансы
+                Логи
               </h1>
 
               <div class="projects__form-wrapper">
@@ -239,11 +239,11 @@
                         <input name="#" type="text" class="projects__form-date-input form__text-input projects__form-date-input--final" id="datepicker-final" placeholder="Любая дата">
                       </div>
 
-                      <select class="form-project-finance__select-operation form__select">
-                        <option value="-1" class="form__option-start">Все валюты</option>
-                        <option value="работа" class="form__option" value="rub">&#8381;</option>
-                        <option value="работа" class="form__option" value="usa">&#36;</option>
-                        <option value="работа" class="form__option" value="eur">&euro;</option>
+                      <select class="form-project-logs__select-operation form__select">
+                        <option value="-1" class="form__option-start">Все события</option>
+                        <option value="работа" class="form__option">событие 1</option>
+                        <option value="работа" class="form__option">событие 2</option>
+                        <option value="работа" class="form__option">событие 3</option>
                       </select>
                     </div>
 
@@ -254,14 +254,9 @@
 
                     <div class="projects__form-wrapper projects__form-wrapper--employee-reset">
                       <div class="projects__checkboxes-wrapper">
-                        <input name="#" type="checkbox" id="profit" class="projects__checkbox form__checkbox" value="profit">
-                        <label for="profit" class="projects__checkbox-label form__checkbox-label">Показывать
-                          приход</label>
-                      </div>
-                      <div class="projects__checkboxes-wrapper">
-                        <input name="#" type="checkbox" id="lesion" class="projects__checkbox form__checkbox" value="lesion">
-                        <label for="lesion" class="projects__checkbox-label form__checkbox-label">Показывать
-                          расход</label>
+                        <input name="#" type="checkbox" id="today" class="projects__checkbox form__checkbox" value="today">
+                        <label for="today" class="projects__checkbox-label form__checkbox-label">
+                          Сегодня</label>
                       </div>
                       <input name="#" type="reset" value="Сбросить фильтры" class="projects__employee-reset-btn">
                     </div>
@@ -273,157 +268,102 @@
           </div>
         </div>
 
-        <div class="finance__workspace">
-          <div class="finance__workspace-wrapper">
+        <div class="logs__workspace">
+          <div class="logs__workspace-wrapper">
             <div class="container">
-              <form class="form finance__form">
-                <fieldset class="form-project-data__fieldset form-project-data__fieldset--essense form__fieldset">
-                  <legend class="vis-hidd">
-                    Описание
-                  </legend>
-
-                </fieldset>
-                <div class="form-project-finance__wrapper-inner">
-                  <div class="form-project-finance__wrapper-inner-middle">
-                    <button type="button" class="form-project-finance__btn form-project-finance__btn--calculate">Считать</button>
-                    <a href="#" class="form-project-finance__exp-xls controls__exp-xls controls__btn controls__btn--disabled">
-                      Экспорт в xls
-                    </a>
-                    <div class="form-project-finance__info">
-                      <div class="form-project-finance__info-wrapper">
-                        <b class="form-project-finance__info-title">
-                          Приход
-                        </b>
-                        <span class="form-project-finance__info-sum form-project-finance__info-sum--minus form-project-finance__info-sum--green form-project-finance__info-sum--rub">
-                          200 000
-                        </span>
-                      </div>
-
-                      <div class="form-project-finance__info-wrapper">
-                        <b class="form-project-finance__info-title">
-                          Расход
-                        </b>
-                        <span class="form-project-finance__info-sum form-project-finance__info-sum--plus form-project-finance__info-sum--red form-project-finance__info-sum--usa">
-                          50 000
-                        </span>
-                      </div>
-
-                      <div class="form-project-finance__info-wrapper">
-                        <b class="form-project-finance__info-title">
-                          Баланс
-                        </b>
-                        <span class="form-project-finance__info-sum form-project-finance__info-sum--minus form-project-finance__info-sum--red form-project-finance__info-sum--eur">
-                          50 000
-                        </span>
-                      </div>
-                      <button type="button" class="form-project-finance__info-btn-close"></button>
-                    </div>
-                    <button type="button" class="form-project-finance__btn-close close-btn close-btn--red"></button>
+              <div class="logs__table">
+                <div class="logs__table-title-row">
+                  <div class="logs__table-title-item logs__table-title-item--date">
+                    <b>
+                      Дата
+                    </b>
+                  </div>
+                  <div class="logs__table-title-item logs__table-title-item--project">
+                    <b>
+                      Проект
+                    </b>
+                  </div>
+                  <div class="logs__table-title-item logs__table-title-item--event">
+                    <b>
+                      Событие
+                    </b>
+                  </div>
+                  <div class="logs__table-title-item logs__table-title-item--dscr">
+                    <b>
+                      Описание
+                    </b>
+                  </div>
+                  <div class="logs__table-title-item logs__table-title-item--executor">
+                    <b>
+                      Кто сделал
+                    </b>
                   </div>
                 </div>
-                <div class="form-project-finance__table-wrapper">
-                  <div class="form-project-finance__table-title-row">
-                    <div class="form-project-finance__table-title-item table-item--checkbox">
-                      <input type="checkbox" name="#">
-                    </div>
-                    <div class="form-project-finance__table-title-item table-item--date">
-                      <b>
-                        Дата
-                      </b>
-                    </div>
-                    <div class="form-project-finance__table-title-item table-item--sum">
-                      <b>
-                        Сумма
-                      </b>
-                    </div>
-                    <div class="form-project-finance__table-title-item table-item--comment">
-                      <b>
-                        Комментарий
-                      </b>
-                    </div>
-                    <div class="form-project-finance__table-title-item table-item--name">
-                      <b>
-                        Оформил операцию
-                      </b>
-                    </div>
+
+                <div class="logs__table-row">
+                  <div class="logs__table-item logs__table-item--date">
+                    <span class="logos__date">10.28.07</span>
+                    <span class="logos__time">10:00:02</span>
                   </div>
-                  <div class="form-project-finance__table-row">
-                    <div class="form-project-finance__table-item table-item--checkbox">
-                      <input type="checkbox" name="#">
-                    </div>
-                    <div class="form-project-finance__table-item table-item--date">
-                      <span>
-                        21.01.2020 09:08:26
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--sum">
-                      <span class="form-project-finance__info-sum--green form-project-finance__info-sum--rub">
-                        200 000
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--comment">
-                      <span>
-                        Пополнение копилки
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--name">
-                      <span>
-                        Антон Городецкий
-                      </span>
-                    </div>
+                  <div class="logs__table-item logs__table-item--project">
+                    <span>
+                      Экспедиция на край света РД-1
+                    </span>
                   </div>
-                  <div class="form-project-finance__table-row">
-                    <div class="form-project-finance__table-item table-item--checkbox">
-                      <input type="checkbox" name="#">
-                    </div>
-                    <div class="form-project-finance__table-item table-item--date">
-                      <span>
-                        21.01.2020 09:08:26
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--sum">
-                      <span class="form-project-finance__info-sum--green form-project-finance__info-sum--rub">
-                        200 000
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--comment">
-                      <span>
-                        Пополнение копилки
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--name">
-                      <span>
-                        Антон Городецкий
-                      </span>
-                    </div>
+                  <div class="logs__table-item logs__table-item--event">
+                    <span>
+                      Уведомние
+                    </span>
                   </div>
-                  <div class="form-project-finance__table-row">
-                    <div class="form-project-finance__table-item table-item--checkbox">
-                      <input type="checkbox" name="#">
-                    </div>
-                    <div class="form-project-finance__table-item table-item--date">
-                      <span>
-                        21.01.2020 09:08:26
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--sum">
-                      <span class="form-project-finance__info-sum--green form-project-finance__info-sum--rub">
-                        200 000
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--comment">
-                      <span>
-                        Пополнение копилки
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--name">
-                      <span>
-                        Антон Городецкий
-                      </span>
-                    </div>
+                  <div class="logs__table-item logs__table-item--dscr">
+                    <span>
+                      Отправлено sms 79826259566 с текстом "personal
+                      «Экспедиция на край света» S 1 —> «Купить сосиски
+                      и кетчуп» —> Провалена personal «Проектное планирование»
+                      WG 1 —> «Понять с чего начать» —> Провалена personal
+                      «Путешествие в 10 й раз» ПУ 1 —> «Купить билеты » —>
+                      Ждет выполнения "
+                    </span>
+                  </div>
+                  <div class="logs__table-item logs__table-item--executor">
+                    <span>
+                      Антон Городецкий
+                    </span>
                   </div>
                 </div>
-              </form>
+
+                <div class="logs__table-row">
+                  <div class="logs__table-item logs__table-item--date">
+                    <span class="logos__date">10.28.07</span>
+                    <span class="logos__time">10:00:02</span>
+                  </div>
+                  <div class="logs__table-item logs__table-item--project">
+                    <span>
+                      Экспедиция на край света РД-1
+                    </span>
+                  </div>
+                  <div class="logs__table-item logs__table-item--event">
+                    <span>
+                      Уведомние
+                    </span>
+                  </div>
+                  <div class="logs__table-item logs__table-item--dscr">
+                    <span>
+                      Отправлено sms 79826259566 с текстом "personal
+                      «Экспедиция на край света» S 1 —> «Купить сосиски
+                      и кетчуп» —> Провалена personal «Проектное планирование»
+                      WG 1 —> «Понять с чего начать» —> Провалена personal
+                      «Путешествие в 10 й раз» ПУ 1 —> «Купить билеты » —>
+                      Ждет выполнения "
+                    </span>
+                  </div>
+                  <div class="logs__table-item logs__table-item--executor">
+                    <span>
+                      Антон Городецкий
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
