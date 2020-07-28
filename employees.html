@@ -44,7 +44,7 @@
               </a>
             </li>
             <li class="header__nav-list-item">
-              <a href="#" class="header__nav-list-link">
+              <a href="finance.html" class="header__nav-list-link">
                 Финансы
               </a>
             </li>
@@ -803,30 +803,32 @@
   <footer class="footer">
   </footer>
 
-  <div class="popup new-client">
+  <div class="popup new-client new-employee">
     <p class="popup__title">
-      Новый клиент
+      Новый Сотрудник
     </p>
     <button type="button" class="popup__btn-close"></button>
     <form class="new-client__form form" action="https//delaidelo.ru" method="POST">
       <input name="#" type="text" class="new-client__form-name form__text-input" placeholder="Имя">
+      <input name="#" type="text" class="new-client__form-name form__text-input" placeholder="Фамилия">
+      <input name="#" type="text" class="new-client__form-name form__text-input" placeholder="Должность">
       <input name="#" type="tel" class="new-client__form-tel form__text-input" placeholder="Teлефон">
       <input name="#" type="email" class="new-client__form-email form__text-input" placeholder="email">
-      <textarea class="new-client__form-textarea form__textarea" placeholder="Комментарий"></textarea>
       <button type="submit" class="new-client__btn-submit">Добавить</button>
     </form>
   </div>
 
-  <div class="popup edit-client">
+  <div class="popup edit-client edit-employee">
     <p class="popup__title">
-      Редактировать клиента
+      Редактировать сотрудника
     </p>
     <button type="button" class="popup__btn-close"></button>
     <form class="edit-client__form form" action="https//delaidelo.ru" method="POST">
-      <input name="#" type="text" class="edit-client__form-name form__text-input" placeholder="Имя" value="Антон городецкий">
-      <input name="#" type="tel" class="edit-client__form-tel form__text-input" placeholder="Teлефон" value="+ 7 098 765 432 10">
-      <input name="#" type="email" class="edit-client__form-email form__text-input" placeholder="email" value="gorodetskii@mail.ru">
-      <textarea class="edit-client__form-textarea form__textarea" placeholder="Комментарий"></textarea>
+      <input name="#" type="text" class="new-client__form-name form__text-input" placeholder="Имя">
+      <input name="#" type="text" class="new-client__form-name form__text-input" placeholder="Фамилия">
+      <input name="#" type="text" class="new-client__form-name form__text-input" placeholder="Должность">
+      <input name="#" type="tel" class="new-client__form-tel form__text-input" placeholder="Teлефон">
+      <input name="#" type="email" class="new-client__form-email form__text-input" placeholder="email">
       <button type="submit" class="edit-client__btn-submit">Добавить</button>
     </form>
   </div>
