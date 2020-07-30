@@ -1,0 +1,324 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>crm</title>
+  <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="simple-effects-for-drop-down-lists/js/modernizr.custom.63321.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+
+      <div class="header__wrapper">
+
+        <a href="index.html" class="header__logo-link">
+          <img class="header__logo-img" src="./img/header-logo.png" height="40" width="99" alt="header-logo">
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="index.html" class="header__nav-list-link">
+                Проекты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="tasks.html" class="header__nav-list-link">
+                Задачи
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="clients.html" class="header__nav-list-link">
+                Клиенты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="employees.html" class="header__nav-list-link">
+                Сотрудники
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="finance.html" class="header__nav-list-link">
+                Финансы
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="logs.html" class="header__nav-list-link">
+                Логи
+              </a>
+            </li>
+            <li class="header__nav-list-item header__nav-list-item--active">
+              <a href="settings.html" class="header__nav-list-link">
+                Настройки
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="logs.html" class="header__nav-list-link">
+                Поддержка
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__settings">
+          <li class="header__settings-item header__settings-item--support">
+            <a href="#" class="header__settings-link header__settings-link--support">
+              <img class="header__settings-link-icon" src="./img/icons/support-icon.png" height="26" width="21" alt="support-icon">
+            </a>
+          </li>
+          <li class="header__settings-item header__settings-item--hint">
+            <a href="#" class="header__settings-link header__settings-link--hint">
+              <img class="header__settings-link" src="./img/icons/bulb-icon.png" height="25" width="23" alt="support-icon">
+            </a>
+          </li>
+        </ul>
+
+        <div class="header__date-time">
+          <div class="header__time">
+            14:10
+          </div>
+          <div class="header__date">
+            04.02.20
+          </div>
+        </div>
+
+        <div class="header__user-block">
+          <a href="personal-area.html" class="header__user-link">
+            <img class="header__user-img" src="./img/user-img.png" height="35" width="35" alt="header-user">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="settings">
+      <div class="container">
+        <div class="settings__wrapper">
+          <h1 class="settings__title big-title">
+            Настройки
+          </h1>
+          <form class="settings__form form">
+            <fieldset class="settings__form-fieldset settings__form-fieldset--user">
+              <legend>Пользовательские настрой</legend>
+
+              <div class="settings__avatar-wrapper">
+                <span class="settings_bold-txt">Установить аватар</span>
+                <input type="file" class="settings__file-input">
+              </div>
+
+              <div class="settings__color-wrapper">
+                <span class="settings_bold-txt">Выбор цвета по умолчанию</span>
+                <select class="settings__select form__select">
+                  <option value="-1" class="form__option-start">По умолчанию</option>
+                  <option value="red" class="form__option">красный</option>
+                </select>
+              </div>
+
+              <div class="settings__educator">
+                <span class="settings_bold-txt">Выбор цвета по умолчанию</span>
+                <select class="settings__select form__select">
+                  <option value="-1" class="form__option-start">Отключен</option>
+                  <option value="red" class="form__option">красный</option>
+                </select>
+              </div>
+
+            </fieldset>
+
+            <fieldset class="settings__form-fieldset settings__form-fieldset--program">
+              <legend>Настройки программы</legend>
+              <div class="settings__avatar-wrapper">
+                <span class="settings_bold-txt">Установить аватар</span>
+                <input type="file" class="settings__file-input">
+              </div>
+              <div class="settings__text-wrapper">
+                <label for="system-name" class="settings_bold-txt">Название системы</label>
+                <input type="text" class="settings__text-input form__text-input" id="system-name">
+              </div>
+
+              <div class="settings__text-wrapper">
+                <label for="api-key" class="settings_bold-txt">Коюч Api для смс уведомлений</label>
+                <input type="text" class="settings__text-input form__text-input" id="api-key">
+              </div>
+
+              <div class="settings__xls-file-wrapper">
+                <span class="settings_bold-txt">Файл образец для выгрузки csv, xls, xlsx</span>
+                <p class="settings__dowmload-links-wrapper">
+                  <a href="#" class="settings__download">Скачать</a>
+                  <a href="#" class="settings__replace">Заменить</a>
+                  <a href="#" class="settings__restore">Восстановить</a>
+                </p>
+              </div>
+
+              <div class="settings__text-wrapper">
+                <span class="settings_bold-txt">Пароль отключения от базы данных</span>
+                <button type="button" class="settings__form-btn controls__btn">Сменить пароль</button>
+              </div>
+
+              <div class="settings__text-wrapper">
+                <span class="settings_bold-txt">Пароль включения базы данных</span>
+                <button type="button" class="settings__form-btn controls__btn">Сменить пароль</button>
+              </div>
+            </fieldset>
+
+            <fieldset class="settings__form-fieldset settings__form-fieldset--notifications">
+              <legend>Настройки уведомлений</legend>
+              <div class="settings__text-wrapper">
+                <label for="api-key" class="settings_bold-txt">Коюч Api для смс уведомлений</label>
+                <div class="settings__text-wrapper-inner">
+                  <label for="time-from">c</label> <input type="text" class="settings__text-input form__text-input" id="time-from" value="10:00">
+                  <label for="time-to">до</label> <input type="text" class="settings__text-input form__text-input" id="time-to" value="20:00">
+                </div>
+                <p class="settings__sub-title">
+                  Повторные уведомления для проваленых задач
+                </p>
+                <div class="settings__failed-message-status">
+                  <span class="settings_bold-txt">Статус</span>
+                  <select class="settings__select form__select">
+                    <option value="-1" class="form__option-start">Отключены</option>
+                    <option value="red" class="form__option">Включены</option>
+                  </select>
+                </div>
+                <div class="settings__failed-message-time-interval">
+                  <span class="settings_bold-txt">Уведомить каждые</span>
+                  <select class="settings__select form__select">
+                    <option value="-1" class="form__option-start">24 часа</option>
+                    <option value="red" class="form__option">12 часа</option>
+                  </select>
+                </div>
+                <p class="settings__sub-title">
+                   Уведомления об окончании рабочего дня
+                </p>
+                <div class="settings__end-workday">
+                  <span class="settings_bold-txt">Статус</span>
+                  <select class="settings__select form__select">
+                    <option value="-1" class="form__option-start">Отключены</option>
+                    <option value="red" class="form__option">Включены</option>
+                  </select>
+                </div>
+                <div class="settings__end-workday">
+                  <label for="end-day" class="settings_bold-txt">Уведомить в ЧЧ:ММ</label>
+                  <input type="text" class="settings__text-input form__text-input" id="end-day">
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="controls__btn--active">Сохранить настройки</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+
+  </footer>
+  <div class="popup edit-task-popup">
+    <p class="popup__title">
+      Редактировать Задачу
+    </p>
+    <button type="button" class="popup__btn-close"></button>
+    <form class="edit-task-popup__form form" action="url" method="POST">
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--group">
+        <div class="edit-task-popup__form-wrapper-inner">
+          <span>Группа</span>
+          <select class="edit-task-popup__select form__select" id="edit-tast-select">
+            <option value="-1">Старт экспедиции</option>
+            <option value="status-1" class="form__option">some_text</option>
+            <option value="status-2" class="form__option">some_text</option>
+          </select>
+        </div>
+        <button type="button" class="edit-task-popup__btn-add-group controls__btn">Добавить группу</button>
+      </div>
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper-data--checkboxes">
+
+        <div class="edit-task-popup__form-wrapper-inner">
+          <span>Контрольная дата</span>
+          <input name="#" type="text" class="settings__form-date-input form__text-input settings__form-date-input--start" id="datepicker" placeholder="Любая дата">
+        </div>
+
+        <div class="edit-task-popup__form-wrapper-inner edit-task-popup__form-wrapper-inner--responsible">
+          <span>Ответсвенный</span>
+          <select class="edit-task-popup__select form__select" id="edit-tast-select">
+            <option value="-1">Имя</option>
+            <option value="status-1" class="form__option">some_text</option>
+            <option value="status-2" class="form__option">some_text</option>
+          </select>
+        </div>
+
+        <div class="edit-task-popup__form-wrapper-inner">
+          <div class="edit-task-popup__reminder">
+            <input type="checkbox" class="checkbox-reminder" id="checkbox-reminder-popup">
+            <label for="checkbox-reminder-popup">Напоминание</label>
+          </div>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="sms" value="sms" class="edit-task-popup__ckeckbox" id="sms-checkbox">
+            SMS
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="email" value="email" class="edit-task-popup__ckeckbox" id="email-checkbox">
+            Email
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="telegram" value="telegram" class="edit-task-popup__ckeckbox" id="telegram-checkbox">
+            Telegram
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="do-first" value="do-first" class="edit-task-popup__ckeckbox red-chekbox" id="do-first-checkbox">
+            Делать первым
+          </label>
+          <label class="edit-task-popup__label">
+            <input type="checkbox" name="urgently" value="urgently" class="edit-task-popup__ckeckbox yellow-chekbox" id="urgently-checkbox">
+            Срочно делать
+          </label>
+        </div>
+      </div>
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--task">
+        <span>Что сделать</span>
+        <textarea placeholder="some text...." class="edit-task-popup__textarea" name="task-txt"></textarea>
+        <button type="button" class="edit-task-popup__micro-btn">
+          <span class="vis-hidd">кнопка микрофона</span>
+        </button>
+      </div>
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--comment">
+        <span>Комментарий</span>
+        <textarea placeholder="some text...." class="edit-task-popup__textarea" name="comment"></textarea>
+        <button type="button" class="edit-task-popup__micro-btn">
+          <span class="vis-hidd">кнопка микрофона</span>
+        </button>
+      </div>
+
+      <div class="edit-task-popup__form-wrapper edit-task-popup__wrapper--files">
+        <h3>Файлы и сканы докуметов</h3>
+        <div class="edit-task-popup__input-file-wrapper">
+          <input type="file" class="edit-task-popup__input-file" id="file">
+        </div>
+        <ul class="edit-task-popup__files-list">
+          <li class="edit-task-popup__files-list-item">
+            <img src="img/foto.png" width="40" height="40" class="edit-task-popup__file-img">
+            <span class="edit-task-popup__file-name">Название файла</span>
+            <button type="button" class="edit-task-popup__file-close close-btn close-btn--red"></button>
+          </li>
+
+          <li class="edit-task-popup__files-list-item">
+            <img src="img/foto.png" width="40" height="40" class="edit-task-popup__file-img">
+            <span class="edit-task-popup__file-name">Название файла</span>
+            <button type="button" class="edit-task-popup__file-close close-btn close-btn--red"></button>
+          </li>
+        </ul>
+      </div>
+
+      <button type="submit" class="add-new-type__btn-submit">Сохранить</button>
+    </form>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+

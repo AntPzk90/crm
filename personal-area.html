@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>crm</title>
+  <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="simple-effects-for-drop-down-lists/js/modernizr.custom.63321.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+
+      <div class="header__wrapper">
+
+        <a href="index.html" class="header__logo-link">
+          <img class="header__logo-img" src="./img/header-logo.png" height="40" width="99" alt="header-logo">
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="index.html" class="header__nav-list-link">
+                Проекты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="tasks.html" class="header__nav-list-link">
+                Задачи
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="clients.html" class="header__nav-list-link">
+                Клиенты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="employees.html" class="header__nav-list-link">
+                Сотрудники
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="finance.html" class="header__nav-list-link">
+                Финансы
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="logs.html" class="header__nav-list-link">
+                Логи
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="settings.html" class="header__nav-list-link">
+                Настройки
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="logs.html" class="header__nav-list-link">
+                Поддержка
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__settings">
+          <li class="header__settings-item header__settings-item--support">
+            <a href="#" class="header__settings-link header__settings-link--support">
+              <img class="header__settings-link-icon" src="./img/icons/support-icon.png" height="26" width="21" alt="support-icon">
+            </a>
+          </li>
+          <li class="header__settings-item header__settings-item--hint">
+            <a href="#" class="header__settings-link header__settings-link--hint">
+              <img class="header__settings-link" src="./img/icons/bulb-icon.png" height="25" width="23" alt="support-icon">
+            </a>
+          </li>
+        </ul>
+
+        <div class="header__date-time">
+          <div class="header__time">
+            14:10
+          </div>
+          <div class="header__date">
+            04.02.20
+          </div>
+        </div>
+
+        <div class="header__user-block">
+          <a href="personal-area.html" class="header__user-link">
+            <img class="header__user-img" src="./img/user-img.png" height="35" width="35" alt="header-user">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="personal-area">
+
+      <div class="personal-area__wrapper">
+        <div class="container">
+          <div class="personal-area__wrapper-top">
+            <h1 class="personal__title big-title">
+              Личный кабинет
+            </h1>
+            <div class="personal-area__wrapper-top--inner">
+              <div class="personal-area__user">
+                <div class="personal-area__user-data">
+                  <img src="./img/foto.png" height="62" width="62" alt="user-img" class="personal-area__user-img">
+                  <p class="personal-area__user-data-wrapper">
+                    <span class="personal-area__user-position">Менджер проектов</span>
+                    <span class="personal-area__user-name">Антон Городецкий</span>
+                  </p>
+                </div>
+                <div class="personal-area__user-contacts">
+                  <p class="personal-area__user-telephone">
+                    <span>Телефон</span>
+                    <span>+7 (912) 387 55 99</span>
+                  </p>
+                  <p class="personal-area__user-email">
+                    <span>Email</span>
+                    <span>namesupport@delaidel.ru</span>
+                  </p>
+                </div>
+                <a href="#" class="personal-area__user-edit-btn controls__btn">
+                  Редактировать
+                </a>
+                <div class="personal-area__sub-users-wrapper">
+                  <span class="personal-area__sub-users-txt">Пользователи 12 человек</span>
+                  <a href="#" class="personal-area__sub-users controls__btn">
+                    Добавить
+                  </a>
+                </div>
+              </div>
+              <div class="personal-area__info">
+                <div class="personal-area__balance">
+                  <p class="personal-area__balance-txt">Баланс: <span>5260</span> руб.</p>
+                  <a href="#" class="personal-area__balance-btn controls__btn controls__btn--active">
+                    Пополнить
+                  </a>
+                </div>
+                <ul class="personal-area__info-list">
+                  <li class="personal-area__info-list-item">
+                    <p class="personal-area__info-list-bold-txt">
+                      Версия системы:
+                      <span class="personal-area__info-list-txt">Бизнес</span>
+                    </p>
+                    <button class="personal-area__info-list-btn personal-area__info-list-btn--vrsion">Изменить</button>
+                    <p class="personal-area__info-list-bold-txt">
+                      Активирована:
+                      <span class="personal-area__info-list-txt">22.02.2020</span>
+                    </p>
+                  </li>
+                  <li class="personal-area__info-list-item">
+                    <p class="personal-area__info-list-bold-txt">
+                      Название системы:
+                      <span class="personal-area__info-list-txt">Холдинг: "Воды кавказы"</span>
+                    </p>
+                    <button class="personal-area__info-list-btn personal-area__info-list-btn--vrsion">Изменить</button>
+                  </li>
+
+                  <li class="personal-area__info-list-item">
+                    <p class="personal-area__info-list-bold-txt">
+                      Адрес системы:
+                      <span class="personal-area__info-list-txt">adk.01.120.delaidel.ru</span>
+                    </p>
+                    <button class="personal-area__info-list-btn personal-area__info-list-btn--adress">Изменить</button>
+                  </li>
+                  <li class="personal-area__info-list-item">
+                    <p class="personal-area__info-list-bold-txt">
+                      Остаток смс:
+                      <span class="personal-area__info-list-txt"><span>312</span> из <span>1000</span></span>
+                    </p>
+                    <button class="personal-area__info-list-btn personal-area__info-list-btn--sms">Добавить</button>
+                  </li>
+                  <li class="personal-area__info-list-item">
+                    <p class="personal-area__info-list-bold-txt">
+                      Облако:
+                      <span class="personal-area__info-list-txt">Использовано <span>4</span> ГБ из <span>10</span> ГБ</span>
+                    </p>
+                    <button class="personal-area__info-list-btn personal-area__info-list-btn--vrsion">Добавить</button>
+                    <button class="personal-area__info-list-btn personal-area__info-list-btn--file-list">Список файлов</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="personal-area__wrapper-bottom">
+            <div class="personal-area__rate">
+              <div class="personal-area__rate-title-row">
+                <div class="personal-area__rate-title-item personal-area__rate-title-item--title">
+                  <span>
+                    Тарифы
+                  </span>
+                </div>
+                <div class="personal-area__rate-title-item personal-area__rate-title-item--personal">
+                  <span>
+                    Персональный
+                  </span>
+                </div>
+                <div class="personal-area__rate-title-item personal-area__rate-title-item--start">
+                  <span>
+                    Старт
+                  </span>
+                </div>
+                <div class="personal-area__rate-title-item personal-area__rate-title-item--business">
+                  <span>
+                    Бизнес
+                  </span>
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  Пользователи
+                </div>
+                <div class="personal-area__rate-item">
+                  1
+                </div>
+                <div class="personal-area__rate-item">
+                  1-7
+                </div>
+                <div class="personal-area__rate-item">
+                  Неограничено
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  Цена
+                </div>
+                <div class="personal-area__rate-item">
+                  бесплатно
+                </div>
+                <div class="personal-area__rate-item">
+                  570 руб
+                </div>
+                <div class="personal-area__rate-item">
+                  1 870 руб
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  Место в облаке
+                </div>
+                <div class="personal-area__rate-item">
+                  1 Гигабайт
+                </div>
+                <div class="personal-area__rate-item">
+                  3 Гигабайта
+                </div>
+                <div class="personal-area__rate-item">
+                  10 Гигабайт
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  CRM
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  Задачи и проекты
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  ДЕЛАЙДЕЛ-NONSTOP
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  Видео инструкции
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+              </div>
+              <div class="personal-area__rate-row">
+                <div class="personal-area__rate-item">
+                  Поддержка
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--tick">
+
+                </div>
+                <div class="personal-area__rate-item personal-area__rate-item--close">
+
+                </div>
+              </div>
+              <div class="personal-area__rate-row personal-area__rate-row--buttons">
+                <div class="personal-area__rate-item">
+
+                </div>
+                <div class="personal-area__rate-item">
+                  <a href="#" class="controls__btn"> Перейти на тариф</a>
+                </div>
+                <div class="personal-area__rate-item">
+                  <a href="#" class="controls__btn"> Перейти на тариф</a>
+                </div>
+                <div class="personal-area__rate-item">
+                  <p>
+                    Ваш текущий тариф
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  </footer>
+
+  <div class="popup">
+    <p class="popup__title">
+      Новый клиент
+    </p>
+    <button type="button" class="popup__btn-close"></button>
+    <form class="new-client__form form" action="https//delaidelo.ru" method="POST">
+      <button type="submit" class="new-client__btn-submit">Добавить</button>
+    </form>
+  </div>
+
+  <div class="popup">
+    <p class="popup__title">
+      Редактировать клиента
+    </p>
+    <button type="button" class="popup__btn-close"></button>
+    <form class="edit-client__form form" action="https//delaidelo.ru" method="POST">
+      <button type="submit" class="edit-client__btn-submit">Добавить</button>
+    </form>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
