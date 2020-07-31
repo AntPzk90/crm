@@ -59,7 +59,7 @@
               </a>
             </li>
             <li class="header__nav-list-item">
-              <a href="logs.html" class="header__nav-list-link">
+              <a href="support.html" class="header__nav-list-link">
                 Поддержка
               </a>
             </li>
@@ -331,10 +331,10 @@
 
                 </div>
                 <div class="personal-area__rate-item">
-                  <a href="#" class="controls__btn"> Перейти на тариф</a>
+                  <a href="#" class="controls__btn personal-area__new-rate-btn"> Перейти на тариф</a>
                 </div>
                 <div class="personal-area__rate-item">
-                  <a href="#" class="controls__btn"> Перейти на тариф</a>
+                  <a href="#" class="controls__btn personal-area__new-rate-btn"> Перейти на тариф</a>
                 </div>
                 <div class="personal-area__rate-item">
                   <p>
@@ -351,24 +351,162 @@
   <footer class="footer">
   </footer>
 
-  <div class="popup">
-    <p class="popup__title">
-      Новый клиент
-    </p>
+  <div class="popup personal-area-file-list-popup">
+    <p class="personal-area-file-list-popup__slogan">Список Файлов</p>
     <button type="button" class="popup__btn-close"></button>
-    <form class="new-client__form form" action="https//delaidelo.ru" method="POST">
-      <button type="submit" class="new-client__btn-submit">Добавить</button>
+    <a href="#" class="controls__close-btn close-btn close-btn--red">
+      <span class="vis-hidd">кнопка закрыть</span>
+    </a>
+    <form class="personal-area-files__form form" action="https//delaidelo.ru" method="POST">
+      <div class="personal-area-list__table-wrapper">
+        <div class="personal-area-list__table-title-row">
+          <div class="personal-area-list__table-title-item table-item--checkbox">
+            <input type="checkbox" name="#">
+          </div>
+          <div class="personal-area-list__table-title-item table-item--name">
+            <b>
+              Название
+            </b>
+          </div>
+          <div class="personal-area-list__table-title-item table-item--file">
+            <b>
+              Расположение файла
+            </b>
+          </div>
+          <div class="personal-area-list__table-title-item table-item--size">
+            <b>
+              Размер
+            </b>
+          </div>
+        </div>
+        <div class="personal-area-list__table-row">
+          <div class="personal-area-list__table-item table-item--checkbox">
+            <input type="checkbox" name="#">
+          </div>
+          <div class="personal-area-list__table-item table-item--name">
+            <span>
+              Вложенный файл
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--file">
+            <span>
+              РД-2 / Экспедиция... / Купить сос... / Название заметки / Чат проекта
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--size">
+            <span>
+              256 КБ
+            </span>
+          </div>
+        </div>
+        <div class="personal-area-list__table-row">
+          <div class="personal-area-list__table-item table-item--checkbox">
+            <input type="checkbox" name="#">
+          </div>
+          <div class="personal-area-list__table-item table-item--name">
+            <span>
+              Вложенный файл
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--file">
+            <span>
+              РД-2 / Экспедиция... / Купить сос... / Название заметки / Чат проекта
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--size">
+            <span>
+              256 КБ
+            </span>
+          </div>
+        </div>
+        <div class="personal-area-list__table-row">
+          <div class="personal-area-list__table-item table-item--checkbox">
+            <input type="checkbox" name="#">
+          </div>
+          <div class="personal-area-list__table-item table-item--name">
+            <span>
+              Вложенный файл
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--file">
+            <span>
+              РД-2 / Экспедиция... / Купить сос... / Название заметки / Чат проекта
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--size">
+            <span>
+              256 КБ
+            </span>
+          </div>
+        </div>
+        <div class="personal-area-list__table-row">
+          <div class="personal-area-list__table-item table-item--checkbox">
+            <input type="checkbox" name="#">
+          </div>
+          <div class="personal-area-list__table-item table-item--name">
+            <span>
+              Вложенный файл
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--file">
+            <span>
+              РД-2 / Экспедиция... / Купить сос... / Название заметки / Чат проекта
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--size">
+            <span>
+              256 КБ
+            </span>
+          </div>
+        </div>
+        <div class="personal-area-list__table-row">
+          <div class="personal-area-list__table-item table-item--checkbox">
+            <input type="checkbox" name="#">
+          </div>
+          <div class="personal-area-list__table-item table-item--name">
+            <span>
+              Вложенный файл
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--file">
+            <span>
+              РД-2 / Экспедиция... / Купить сос... / Название заметки / Чат проекта
+            </span>
+          </div>
+          <div class="personal-area-list__table-item table-item--size">
+            <span>
+              256 КБ
+            </span>
+          </div>
+        </div>
+      </div>
     </form>
   </div>
 
-  <div class="popup">
-    <p class="popup__title">
-      Редактировать клиента
-    </p>
+  <div class="popup personal-area-rate-popup">
+
     <button type="button" class="popup__btn-close"></button>
-    <form class="edit-client__form form" action="https//delaidelo.ru" method="POST">
-      <button type="submit" class="edit-client__btn-submit">Добавить</button>
-    </form>
+    <form class="personal-area-rate-popup__form form" action="" url="https//">
+    <p class="personal-area-rate-popup__big-txt">Для перехода на тариф “Бизнес”
+      на вашем счету должно быть
+        не менее 1870 рублей</p>
+    <p class="personal-area-rate-popup__small-txt">
+      <span>Текущий баланс</span>
+      <span class="personal-area-rate-popup__sum">
+        172722.229 руб.
+      </span>
+    </p>
+    <a href="#" class="personal-area-rate-popup__replenishment controls__btn controls__btn--active">Пополнить</a>
+    <p class="personal-area-rate-popup__terms">
+      Для подключения тарифа Вам необходимо прочитать и согласиться с <a href="#">условиями</a>
+      оказания платных услуг ООО “ГСД”
+    </p>
+    <p class="personal-area-rate-popup__consent">
+      <input type="checkbox">
+      Я прочитал и согласен с условиями
+    </p>
+    <button type="submit" class="personal-area-rate-popup__submit controls__btn">Перейти на тариф “Бизнес”</button>
+  </form>
   </div>
   <script src="./js/script.js"></script>
 </body>

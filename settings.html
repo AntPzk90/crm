@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="header__nav-list-item">
-              <a href="logs.html" class="header__nav-list-link">
+              <a href="support.html" class="header__nav-list-link">
                 Поддержка
               </a>
             </li>
@@ -106,72 +106,94 @@
             <fieldset class="settings__form-fieldset settings__form-fieldset--user">
               <legend>Пользовательские настрой</legend>
 
-              <div class="settings__avatar-wrapper">
-                <span class="settings_bold-txt">Установить аватар</span>
-                <input type="file" class="settings__file-input">
-              </div>
+              <div class="settings__form-fieldset-wrapper">
+                <div class="settings__avatar-wrapper">
+                  <span class="settings_bold-txt">Установить аватар</span>
+                  <div class="settings__file-wrapper">
+                    <p class="settings__file-txt">
+                      Перетащите или выберите файл
+                    </p>
+                    <p class="settings__file-blue-txt">
+                      Выберите файл
+                    </p>
+                    <input type="file" class="settings__file-input">
+                  </div>
+                </div>
 
-              <div class="settings__color-wrapper">
-                <span class="settings_bold-txt">Выбор цвета по умолчанию</span>
-                <select class="settings__select form__select">
-                  <option value="-1" class="form__option-start">По умолчанию</option>
-                  <option value="red" class="form__option">красный</option>
-                </select>
-              </div>
+                <div class="settings__color-wrapper">
+                  <span class="settings_bold-txt">Выбор цвета по умолчанию</span>
+                  <select class="settings__select form__select">
+                    <option value="-1" class="form__option-start">По умолчанию</option>
+                    <option value="red" class="form__option">красный</option>
+                  </select>
+                </div>
 
-              <div class="settings__educator">
-                <span class="settings_bold-txt">Выбор цвета по умолчанию</span>
-                <select class="settings__select form__select">
-                  <option value="-1" class="form__option-start">Отключен</option>
-                  <option value="red" class="form__option">красный</option>
-                </select>
+                <div class="settings__educator">
+                  <span class="settings_bold-txt">Выбор цвета по умолчанию</span>
+                  <select class="settings__select form__select">
+                    <option value="-1" class="form__option-start">Отключен</option>
+                    <option value="red" class="form__option">красный</option>
+                  </select>
+                </div>
               </div>
 
             </fieldset>
 
             <fieldset class="settings__form-fieldset settings__form-fieldset--program">
               <legend>Настройки программы</legend>
-              <div class="settings__avatar-wrapper">
-                <span class="settings_bold-txt">Установить аватар</span>
-                <input type="file" class="settings__file-input">
-              </div>
-              <div class="settings__text-wrapper">
-                <label for="system-name" class="settings_bold-txt">Название системы</label>
-                <input type="text" class="settings__text-input form__text-input" id="system-name">
-              </div>
+              <div class="settings__form-fieldset-wrapper">
+                <div class="settings__avatar-wrapper">
+                  <span class="settings_bold-txt">Установить аватар</span>
+                  <div class="settings__file-wrapper">
+                    <p class="settings__file-txt">
+                      Перетащите или выберите файл
+                    </p>
+                    <p class="settings__file-blue-txt">
+                      Выберите файл
+                    </p>
+                    <input type="file" class="settings__file-input">
+                  </div>
+                </div>
+                <div class="settings__text-wrapper">
+                  <label for="system-name" class="settings_bold-txt">Название системы</label>
+                  <input type="text" class="settings__text-input form__text-input" id="system-name">
+                </div>
 
-              <div class="settings__text-wrapper">
-                <label for="api-key" class="settings_bold-txt">Коюч Api для смс уведомлений</label>
-                <input type="text" class="settings__text-input form__text-input" id="api-key">
-              </div>
+                <div class="settings__text-wrapper">
+                  <label for="api-key" class="settings_bold-txt">Коюч Api для смс уведомлений</label>
+                  <input type="text" class="settings__text-input form__text-input" id="api-key">
+                </div>
 
-              <div class="settings__xls-file-wrapper">
-                <span class="settings_bold-txt">Файл образец для выгрузки csv, xls, xlsx</span>
-                <p class="settings__dowmload-links-wrapper">
-                  <a href="#" class="settings__download">Скачать</a>
-                  <a href="#" class="settings__replace">Заменить</a>
-                  <a href="#" class="settings__restore">Восстановить</a>
-                </p>
-              </div>
+                <div class="settings__xls-file-wrapper">
+                  <span class="settings_bold-txt">Файл образец для выгрузки csv, xls, xlsx</span>
+                  <p class="settings__dowmload-links-wrapper">
+                    <a href="#" class="settings__download settings--active-link">Скачать</a>
+                    <a href="#" class="settings__replace">Заменить</a>
+                    <a href="#" class="settings__restore settings--disabled-link">Восстановить</a>
+                  </p>
+                </div>
 
-              <div class="settings__text-wrapper">
-                <span class="settings_bold-txt">Пароль отключения от базы данных</span>
-                <button type="button" class="settings__form-btn controls__btn">Сменить пароль</button>
-              </div>
+                <div class="settings__text-wrapper">
+                  <span class="settings_bold-txt">Пароль отключения от базы данных</span>
+                  <button type="button" class="settings__form-btn controls__btn">Сменить пароль</button>
+                </div>
 
-              <div class="settings__text-wrapper">
-                <span class="settings_bold-txt">Пароль включения базы данных</span>
-                <button type="button" class="settings__form-btn controls__btn">Сменить пароль</button>
+                <div class="settings__text-wrapper">
+                  <span class="settings_bold-txt">Пароль включения базы данных</span>
+                  <button type="button" class="settings__form-btn controls__btn">Сменить пароль</button>
+                </div>
               </div>
             </fieldset>
 
             <fieldset class="settings__form-fieldset settings__form-fieldset--notifications">
               <legend>Настройки уведомлений</legend>
-              <div class="settings__text-wrapper">
-                <label for="api-key" class="settings_bold-txt">Коюч Api для смс уведомлений</label>
-                <div class="settings__text-wrapper-inner">
-                  <label for="time-from">c</label> <input type="text" class="settings__text-input form__text-input" id="time-from" value="10:00">
-                  <label for="time-to">до</label> <input type="text" class="settings__text-input form__text-input" id="time-to" value="20:00">
+              <div class="settings__form-fieldset-wrapper">
+                <div class="settings__text-wrapper">
+                  <label for="api-key" class="settings_bold-txt">Коюч Api для смс уведомлений</label>
+                  <div class="settings__text-wrapper-inner">
+                    <label for="time-from">c</label> <input type="text" class="settings__text-input form__text-input" id="time-from" value="10:00">
+                    <label for="time-to">до</label> <input type="text" class="settings__text-input form__text-input" id="time-to" value="20:00">
+                  </div>
                 </div>
                 <p class="settings__sub-title">
                   Повторные уведомления для проваленых задач
@@ -191,7 +213,7 @@
                   </select>
                 </div>
                 <p class="settings__sub-title">
-                   Уведомления об окончании рабочего дня
+                  Уведомления об окончании рабочего дня
                 </p>
                 <div class="settings__end-workday">
                   <span class="settings_bold-txt">Статус</span>
@@ -206,7 +228,7 @@
                 </div>
               </div>
             </fieldset>
-            <button type="submit" class="controls__btn--active">Сохранить настройки</button>
+            <button type="submit" class="settings__submit-btn controls__btn--active">Сохранить настройки</button>
           </form>
         </div>
       </div>
@@ -216,7 +238,7 @@
   <footer class="footer">
 
   </footer>
-  <div class="popup edit-task-popup">
+  <div class="popup settings-page-popup">
     <p class="popup__title">
       Редактировать Задачу
     </p>
