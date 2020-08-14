@@ -13,86 +13,92 @@
   <header class="header">
     <div class="container">
 
-      <div class="header__wrapper">
+        <div class="header__wrapper">
 
-        <a href="index.html" class="header__logo-link">
-          <img class="header__logo-img" src="./img/header-logo.png" height="40" width="99" alt="header-logo">
-        </a>
+          <a href="index.html" class="header__logo-link">
+            <img class="header__logo-img" src="./img/header-logo.png" height="40" width="99" alt="header-logo">
+          </a>
 
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-list-item">
-              <a href="index.html" class="header__nav-list-link">
-                Проекты
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item header__nav-list-item--active">
+                <a href="index.html" class="header__nav-list-link">
+                  Проекты
+                </a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="tasks.html" class="header__nav-list-link">
+                  Задачи
+                </a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="clients.html" class="header__nav-list-link">
+                  Клиенты
+                </a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="employees.html" class="header__nav-list-link">
+                  Сотрудники
+                </a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="finance.html" class="header__nav-list-link">
+                  Финансы
+                </a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="logs.html" class="header__nav-list-link">
+                  Логи
+                </a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="settings.html" class="header__nav-list-link">
+                  Настройки
+                </a>
+              </li>
+              <li class="header__nav-list-item header__nav-list-item--active">
+                <a href="support.html" class="header__nav-list-link">
+                  Поддержка
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header__settings">
+            <li class="header__settings-item header__settings-item--support">
+              <a href="#" class="header__settings-link header__settings-link--support">
+                <img class="header__settings-link-icon" src="./img/icons/support-icon.png" height="26" width="21" alt="support-icon">
+                  <span class="header__settings-txt">Поддержка</span>
               </a>
             </li>
-            <li class="header__nav-list-item">
-              <a href="tasks.html" class="header__nav-list-link">
-                Задачи
-              </a>
-            </li>
-            <li class="header__nav-list-item">
-              <a href="clients.html" class="header__nav-list-link">
-                Клиенты
-              </a>
-            </li>
-            <li class="header__nav-list-item">
-              <a href="employees.html" class="header__nav-list-link">
-                Сотрудники
-              </a>
-            </li>
-            <li class="header__nav-list-item">
-              <a href="finance.html" class="header__nav-list-link">
-                Финансы
-              </a>
-            </li>
-            <li class="header__nav-list-item">
-              <a href="logs.html" class="header__nav-list-link">
-                Логи
-              </a>
-            </li>
-            <li class="header__nav-list-item">
-              <a href="settings.html" class="header__nav-list-link">
-                Настройки
-              </a>
-            </li>
-            <li class="header__nav-list-item header__nav-list-item--active">
-              <a href="support.html" class="header__nav-list-link">
-                Поддержка
+            <li class="header__settings-item header__settings-item--hint">
+              <a href="#" class="header__settings-link header__settings-link--hint">
+                <img class="header__settings-link-icon" src="./img/icons/bulb-icon.png" height="25" width="23" alt="support-icon">
+                  <span class="header__settings-txt">Просветитель</span>
               </a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="header__settings">
-          <li class="header__settings-item header__settings-item--support">
-            <a href="#" class="header__settings-link header__settings-link--support">
-              <img class="header__settings-link-icon" src="./img/icons/support-icon.png" height="26" width="21" alt="support-icon">
-            </a>
-          </li>
-          <li class="header__settings-item header__settings-item--hint">
-            <a href="#" class="header__settings-link header__settings-link--hint">
-              <img class="header__settings-link" src="./img/icons/bulb-icon.png" height="25" width="23" alt="support-icon">
-            </a>
-          </li>
-        </ul>
-
-        <div class="header__date-time">
-          <div class="header__time">
-            14:10
+          <div class="header__date-time">
+            <div class="header__time">
+              14:10
+            </div>
+            <div class="header__date">
+              04.02.20
+            </div>
           </div>
-          <div class="header__date">
-            04.02.20
+
+          <div class="header__user-block">
+            <a href="personal-area.html" class="header__user-link">
+              <img class="header__user-img" src="./img/user-img.png" height="35" width="35" alt="header-user">
+            </a>
+            <span class="header__user-txt">Личный кабинет</span>
           </div>
-        </div>
 
-        <div class="header__user-block">
-          <a href="personal-area.html" class="header__user-link">
-            <img class="header__user-img" src="./img/user-img.png" height="35" width="35" alt="header-user">
-          </a>
+          <button class="header__mobile-btn header__mobile-btn--gamburger">
+            <span class="header__mobile-btn-decor"></span>
+          </button>
         </div>
-
-      </div>
 
     </div>
   </header>
