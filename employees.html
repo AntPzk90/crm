@@ -243,7 +243,10 @@
               <div class="employees__table">
                 <div class="employees__table-title-row">
                   <div class="employees__table-title-item table-item--checkbox">
-                    <input type="checkbox" name="#">
+                    <input type="checkbox" name="#" id="check-all">
+                    <label for="check-all" class="employees__mobile-title-txt">
+                      Выбрать всех
+                    </label>
                   </div>
                   <div class="employees__table-title-item">
                     <b>
@@ -281,32 +284,50 @@
                   <div class="employees__table-item table-item--checkbox">
                     <input type="checkbox" name="#">
                   </div>
-                  <div class="employees__table-item">
+                  <div class="employees__table-item employees__table-item--name">
+                    <span class="employees__mobile-title-txt employees__mobile-title-txt--name">
+                      Имя
+                    </span>
                     <span>
                       Антон Городецкий
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      В системе
+                    </span>
                     <span>
                       Да, подтвердил
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Роль
+                    </span>
                     <span>
                       Менеджер
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Должность
+                    </span>
                     <span>
                       Первый менеджер
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Телефон
+                    </span>
                     <span>
                       + 7 098 765 432 10
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Электронная почта
+                    </span>
                     <span>
                       gorodetskii@mail.ru
                     </span>
@@ -317,32 +338,50 @@
                   <div class="employees__table-item table-item--checkbox">
                     <input type="checkbox" name="#">
                   </div>
-                  <div class="employees__table-item">
+                  <div class="employees__table-item employees__table-item--name">
+                    <span class="employees__mobile-title-txt employees__mobile-title-txt--name">
+                      Имя
+                    </span>
                     <span>
                       Антон Городецкий
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      В системе
+                    </span>
                     <span>
                       Да, подтвердил
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Роль
+                    </span>
                     <span>
                       Менеджер
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Должность
+                    </span>
                     <span>
                       Первый менеджер
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Телефон
+                    </span>
                     <span>
                       + 7 098 765 432 10
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Электронная почта
+                    </span>
                     <span>
                       gorodetskii@mail.ru
                     </span>
@@ -353,32 +392,50 @@
                   <div class="employees__table-item table-item--checkbox">
                     <input type="checkbox" name="#">
                   </div>
-                  <div class="employees__table-item">
+                  <div class="employees__table-item employees__table-item--name">
+                    <span class="employees__mobile-title-txt employees__mobile-title-txt--name">
+                      Имя
+                    </span>
                     <span>
                       Антон Городецкий
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      В системе
+                    </span>
                     <span>
                       Да, подтвердил
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Роль
+                    </span>
                     <span>
                       Менеджер
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Должность
+                    </span>
                     <span>
                       Первый менеджер
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Телефон
+                    </span>
                     <span>
                       + 7 098 765 432 10
                     </span>
                   </div>
                   <div class="employees__table-item">
+                    <span class="employees__mobile-title-txt">
+                      Электронная почта
+                    </span>
                     <span>
                       gorodetskii@mail.ru
                     </span>
@@ -413,6 +470,15 @@
                       <b>
                         Статус
                       </b>
+                      <div class="employees__mobile-switch">
+                        <select class="projects__form-select-type form__select" id="cd-dropdown-1">
+                          <option value="-1" class="form__option-start">Выбрать</option>
+                          <option value="administrator" class="form__option">Админимстратор</option>
+                          <option value="moderator" class="form__option">Модератор</option>
+                          <option value="manager" class="form__option">Менеджер</option>
+                          <option value="responsible" class="form__option">Ответственный</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="employees__table-title-item">
                       <b>
@@ -442,28 +508,9 @@
                         Выбрать всё статусы
                       </span>
                     </div>
-                    <div class="employees__table-item">
-                      <span>
-                        Антон Кокраев
-                      </span>
-                      <div class="employess__messengers-wrapper">
-                        <label class="employess__messengers-label">
-                          <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
-                          E-mail
-                        </label>
-                        <label class="employess__messengers-label">
-                          <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
-                          SMS
-                        </label>
-                        <label class="employess__messengers-label">
-                          <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
-                          Telegram
-                        </label>
-                      </div>
-                    </div>
-                    <div class="employees__table-item employees__table-item--sel-mess">
+                    <div class="employees__table-item employees__table-item--sel-mess employees__table-item--admin">
                       <select class="employees__select form__select">
-                        <option value="-1" class="form__option-start">Выбрать</option>
+                        <option value="-1" class="form__option-start">Админ.</option>
                         <option value="работа" class="form__option">Василиса Андреевна</option>
                       </select>
                       <div class="employess__messengers-wrapper">
@@ -481,7 +528,27 @@
                         </label>
                       </div>
                     </div>
-                    <div class="employees__table-item employees__table-item--sel-mess">
+                    <div class="employees__table-item employees__table-item--sel-mess employees__table-item--moderator">
+                      <select class="employees__select form__select">
+                        <option value="-1" class="form__option-start">Модератор</option>
+                        <option value="работа" class="form__option">Василиса Андреевна</option>
+                      </select>
+                      <div class="employess__messengers-wrapper">
+                        <label class="employess__messengers-label">
+                          <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                          E-mail
+                        </label>
+                        <label class="employess__messengers-label">
+                          <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                          SMS
+                        </label>
+                        <label class="employess__messengers-label">
+                          <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                          Telegram
+                        </label>
+                      </div>
+                    </div>
+                    <div class="employees__table-item employees__table-item--sel-mess employees__table-item--menager">
                       <select class="employees__select form__select">
                         <option value="-1" class="form__option-start">Менеджер</option>
                         <option value="работа" class="form__option">Василиса Андреевна</option>
@@ -501,7 +568,11 @@
                         </label>
                       </div>
                     </div>
-                    <div class="employees__table-item">
+                    <div class="employees__table-item employees__table-item--sel-mess employees__table-item--responsible">
+                      <select class="employees__select form__select">
+                        <option value="-1" class="form__option-start">Ответсв.</option>
+                        <option value="работа" class="form__option">Василиса Андреевна</option>
+                      </select>
                       <div class="employess__messengers-wrapper">
                         <label class="employess__messengers-label">
                           <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -523,10 +594,10 @@
                     <div class="employees__table-row">
                       <div class="employees__table-item">
                         <span>
-                          Сделана и проверена
+                          Комментарий
                         </span>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--admin">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -542,7 +613,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--moderator">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -558,7 +629,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--menager">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -574,7 +645,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--responsible">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -593,12 +664,12 @@
                     </div>
 
                     <div class="employees__table-row">
-                      <div class="employees__table-item">
+                      <div class="employees__table-item form__option--made-tested">
                         <span>
-                          Сделана и проверена
+                          Ждёт решения
                         </span>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--admin">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -614,7 +685,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--moderator">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -630,7 +701,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--menager">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -646,7 +717,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--responsible">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -665,12 +736,12 @@
                     </div>
 
                     <div class="employees__table-row">
-                      <div class="employees__table-item">
+                      <div class="employees__table-item form__option--not-made-tested">
                         <span>
-                          Сделана и проверена
+                          Не сделана и не проверена
                         </span>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--admin">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -686,7 +757,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--moderator">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -702,7 +773,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--menager">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -718,7 +789,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--responsible">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -737,12 +808,12 @@
                     </div>
 
                     <div class="employees__table-row">
-                      <div class="employees__table-item">
+                      <div class="employees__table-item form__option--not-active">
                         <span>
-                          Сделана и проверена
+                          Ещё не активна
                         </span>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--admin">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -758,7 +829,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--moderator">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -774,7 +845,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--menager">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -790,7 +861,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="employees__table-item">
+                      <div class="employees__table-item employees__table-item--responsible">
                         <div class="employess__messengers-wrapper">
                           <label class="employess__messengers-label">
                             <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
@@ -807,8 +878,444 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="employees__table-row">
+                      <div class="employees__table-item form__option--waiting-activation">
+                        <span>
+                          Ждёт активации
+                        </span>
+                      </div>
+                      <div class="employees__table-item employees__table-item--admin">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--moderator">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--menager">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--responsible">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="employees__table-row">
+                      <div class="employees__table-item form__option--waiting-completion">
+                        <span>
+                          Ждёт выполнения
+                        </span>
+                      </div>
+                      <div class="employees__table-item employees__table-item--admin">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--moderator">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--menager">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--responsible">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="employees__table-row">
+                      <div class="employees__table-item form__option--waiting-verification">
+                        <span>
+                          Ждёт проверки
+                        </span>
+                      </div>
+                      <div class="employees__table-item employees__table-item--admin">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--moderator">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--menager">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--responsible">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="employees__table-row">
+                      <div class="employees__table-item form__option--failed">
+                        <span>
+                          Провалена
+                        </span>
+                      </div>
+                      <div class="employees__table-item employees__table-item--admin">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--moderator">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--menager">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--responsible">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="employees__table-row">
+                      <div class="employees__table-item form__option--urgent">
+                        <span>
+                          Срочно сделать
+                        </span>
+                      </div>
+                      <div class="employees__table-item employees__table-item--admin">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--moderator">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--menager">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--responsible">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="employees__table-row">
+                      <div class="employees__table-item form__option--made-first">
+                        <span>
+                          Делать первым
+                        </span>
+                      </div>
+                      <div class="employees__table-item employees__table-item--admin">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--moderator">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--menager">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                      <div class="employees__table-item employees__table-item--responsible">
+                        <div class="employess__messengers-wrapper">
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="email" class="employess__messengers-checkbox employess__messengers-checkbox--email">
+                            E-mail
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="sms" class="employess__messengers-checkbox employess__messengers-checkbox--sms">
+                            SMS
+                          </label>
+                          <label class="employess__messengers-label">
+                            <input type="checkbox" name="telegram" class="employess__messengers-checkbox employess__messengers-checkbox--telegram">
+                            Telegram
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
+                <button type="submit" class="controls__exp-xls controls__btn employees__save-btn employees__save-btn--mobile">
+                  Сохранить настройки
+                </button>
               </form>
             </div>
           </div>
