@@ -117,10 +117,9 @@
               <h1 class="finance__title big-title">
                 Мои Финансы
               </h1>
-
               <div class="projects__form-wrapper">
                 <form class="projects__form form" action="https//delaidelo.ru" method="GET">
-
+                  <b class="project__mobile-title">Фильтры</b>
                   <fieldset class="projects__form-fieldset-type form__fieldset">
                     <legend class="projects__form-legend form__legend vis-hidd">типы проектов</legend>
 
@@ -221,6 +220,10 @@
 
                   </fieldset>
 
+                  <button type="button" class="projects__form-filter-mobile-btn">
+                    Фильтры (выбрано <span>3</span> параметра)
+                  </button>
+
                   <fieldset class="projects__form-fieldset-main form__fieldset">
                     <legend class="projects__form-legend form__legend vis-hidd">поиск проектов</legend>
 
@@ -257,7 +260,15 @@
                         <label for="lesion" class="projects__checkbox-label form__checkbox-label">Показывать
                           расход</label>
                       </div>
-                      <input name="#" type="reset" value="Сбросить фильтры" class="projects__employee-reset-btn">
+                      <button type="button" class="projects__employee-close">Закрыть</button>
+                      <button type="reset" class="projects__employee-reset-btn">
+                        <span class="projects__employee-reset-txt-desc">
+                          Сбросить фильтры
+                        </span>
+                        <span class="projects__employee-reset-txt-mobi">
+                          Сбросить
+                        </span>
+                      </button>
                     </div>
                   </fieldset>
 
@@ -318,7 +329,15 @@
                 <div class="form-project-finance__table-wrapper">
                   <div class="form-project-finance__table-title-row">
                     <div class="form-project-finance__table-title-item table-item--checkbox">
-                      <input type="checkbox" name="#">
+                      <input type="checkbox" name="#" id="check-all">
+                      <label for="check-all" class="form-project-finance__mobile-title-txt">
+                        Выбрать всех
+                      </label>
+                    </div>
+                    <div class="form-project-finance__table-title-item table-item--date">
+                      <b>
+                        Проект
+                      </b>
                     </div>
                     <div class="form-project-finance__table-title-item table-item--date">
                       <b>
@@ -345,72 +364,39 @@
                     <div class="form-project-finance__table-item table-item--checkbox">
                       <input type="checkbox" name="#">
                     </div>
+                    <div class="form-project-finance__table-item table-item--title">
+                      <span>
+                        Экспедиция
+                      </span>
+                    </div>
                     <div class="form-project-finance__table-item table-item--date">
+                      <span class="form-project-finance__mobile-title-txt">
+                        Дата
+                      </span>
                       <span>
                         21.01.2020 09:08:26
                       </span>
                     </div>
                     <div class="form-project-finance__table-item table-item--sum">
+                      <span class="form-project-finance__mobile-title-txt">
+                        Сумма
+                      </span>
                       <span class="form-project-finance__info-sum--green form-project-finance__info-sum--rub">
                         200 000
                       </span>
                     </div>
                     <div class="form-project-finance__table-item table-item--comment">
+                      <span class="form-project-finance__mobile-title-txt">
+                        Комментарий
+                      </span>
                       <span>
                         Пополнение копилки
                       </span>
                     </div>
                     <div class="form-project-finance__table-item table-item--name">
-                      <span>
-                        Антон Городецкий
+                      <span class="form-project-finance__mobile-title-txt">
+                        Исполнитель
                       </span>
-                    </div>
-                  </div>
-                  <div class="form-project-finance__table-row">
-                    <div class="form-project-finance__table-item table-item--checkbox">
-                      <input type="checkbox" name="#">
-                    </div>
-                    <div class="form-project-finance__table-item table-item--date">
-                      <span>
-                        21.01.2020 09:08:26
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--sum">
-                      <span class="form-project-finance__info-sum--green form-project-finance__info-sum--rub">
-                        200 000
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--comment">
-                      <span>
-                        Пополнение копилки
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--name">
-                      <span>
-                        Антон Городецкий
-                      </span>
-                    </div>
-                  </div>
-                  <div class="form-project-finance__table-row">
-                    <div class="form-project-finance__table-item table-item--checkbox">
-                      <input type="checkbox" name="#">
-                    </div>
-                    <div class="form-project-finance__table-item table-item--date">
-                      <span>
-                        21.01.2020 09:08:26
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--sum">
-                      <span class="form-project-finance__info-sum--green form-project-finance__info-sum--rub">
-                        200 000
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--comment">
-                      <span>
-                        Пополнение копилки
-                      </span>
-                    </div>
-                    <div class="form-project-finance__table-item table-item--name">
                       <span>
                         Антон Городецкий
                       </span>
