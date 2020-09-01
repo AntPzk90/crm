@@ -19171,13 +19171,16 @@ $("html body").click(function (evt) {
   }
 });
 
-let activeDropdowns = [];
-$('.cd-dropdown').click(function() {
-  activeDropdowns.push($(this));
+let activeDropdown = true;
 
-  if (activeDropdowns.length > 1) {
-    activeDropdowns[0].removeClass('cd-active');
-    activeDropdowns.shift(activeDropdowns[0])
+$('.cd-dropdown').click(function(evt) {
+  let target = $(evt.target);
+
+  $(document).find('.cd-active').removeClass('cd-active');
+  $(this).addClass('cd-active');
+  activeDropdown = !activeDropdown;
+  if(activeDropdown) {
+    $(this).removeClass('cd-active');
   }
 });
 
