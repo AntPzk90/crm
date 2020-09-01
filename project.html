@@ -777,7 +777,7 @@
                   <div class="form-project-finance__table-wrapper">
                     <div class="form-project-finance__table-title-row">
                       <div class="form-project-finance__table-title-item table-item--checkbox">
-                        <input type="checkbox" name="#" id="check-all">
+                        <input type="checkbox" name="#" id="check-all" class="main-checkbox">
                         <label for="check-all" class="form-project-finance__mobile-title-txt">
                           Выбрать всех
                         </label>
@@ -846,13 +846,13 @@
 
           <div class="project-settings__wrapper-inner project-pages project-pages--comments-files">
             <nav class="project-pages__switch project-pages__switch--comments-files">
-              <button class="project-pages__btn project-pages__btn--active">
+              <button data="all" class="project-pages__btn project-pages__btn--active">
                 Все
               </button>
-              <button class="project-pages__btn">
+              <button data="comment" class="project-pages__btn">
                 Комментарии
               </button>
-              <button class="project-pages__btn">
+              <button data="files" class="project-pages__btn">
                 Файлы
               </button>
             </nav>
@@ -863,7 +863,7 @@
                 </legend>
                 <div class="form-project-file-comment__info-area">
                   <ul class="form-project-file-comment__list">
-                    <li class="form-project-file-comment__list-item">
+                    <li class="form-project-file-comment__list-item item--comment">
                       <b class="form-project-file-comment__list-name">
                         Антон Городецкий
                       </b>
@@ -876,7 +876,7 @@
                         <span class="time">14:16</span>
                       </span>
                     </li>
-                    <li class="form-project-file-comment__list-item">
+                    <li class="form-project-file-comment__list-item item--file">
                       <b class="form-project-file-comment__list-name">
                         Антон Городецкий
                       </b>
@@ -893,6 +893,7 @@
                 </div>
                 <div class="form-project-file-comment__submit-wrapper">
                   <input name="#" type="text" class="form-project-file-comment__input-text form__text-input" placeholder="Напишите коментарий или перетащите файл">
+                  <a href="#" class="form-project-file-comment__file-link"></a>
                   <button type="submit" class="form-project-file-comment__submit-btn">Отправить</button>
                 </div>
               </fieldset>
